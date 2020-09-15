@@ -1,13 +1,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
-    <meta name="description" content="黑苹果,就是普通的电脑安装苹果系统, 当然这里我不讨论真机.
-毕竟非常折腾的, 主要都是驱动问题.
-... ...
+    <meta name="description" content="时隔好几个月想起来我这个放在脑后的博客，突然觉得自己应该碎碎念一些经年流传的世事，于是，捡起来慢慢玩吧哈哈 😄😄
 
-虚拟机VMware安装Mac Os 10.14教程
-前言
-之前断断续续的对黑苹果的玩法感兴趣, 折腾了一段时间, 要么就是..." />
+域名过期了，回归默认url
+因为域名过期了，又觉得自己长久以来也没去打理，所以有点听之任之的感觉，现在找回来，无非是因为..." />
     <meta name="keywords" content="其他" />
     <link rel="stylesheet" href="https://leonkeen.github.io/media/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://leonkeen.github.io/styles/main.css">
@@ -392,11 +389,11 @@
         <div class="postshow" style="padding-bottom: 0;">
             
             <div class="postdetailimg" style="width:100%;overflow: hidden;">
-                <img src="https://leonkeen.github.io/post-images/虚拟机VMware安装Mac Os 10.14教程.jpg" class="postimage" style="cursor:auto">
+                <img src="https://images.unsplash.com/photo-1586241223706-1fee38406c66?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1504&amp;q=80" class="postimage" style="cursor:auto">
             </div>
             <div class="postinfo-detail">
-                <div class="postdate"><i class="fa fa-calendar"></i>2020-03-11</div>
-                <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 6 min read</div>
+                <div class="postdate"><i class="fa fa-calendar"></i>2020-09-15</div>
+                <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 2 min read</div>
                 <div class="posttag">
                     
                     <a href="https://leonkeen.github.io/tag/Sc5O3SYJ7" class="postlink">
@@ -408,9 +405,9 @@
             
         <div id="articlecontent">
             <div id="texttitle" style="text-align: center">
-                <h2>虚拟机VMware安装Mac Os 10.14教程</h2>
+                <h2>博客回归了</h2>
                 <!-- id 将作为查询条件 -->
-                <div id="pl" style="display:none">https://leonkeen.github.io/post/虚拟机VMware安装Mac Os 10.14教程</div>
+                <div id="pl" style="display:none">https://leonkeen.github.io/post/bo-ke-hui-gui-liao</div>
                 <div id="rootaddr" style="display:none">https://leonkeen.github.io</div>
                 <span id="hotnum">
                     <h4><i class="fa fa-eye" aria-hidden="true" style="color: #FF8C00;"></i>&nbsp;&nbsp;热度</i>: <i
@@ -418,117 +415,25 @@
                 </span>
             </div>
             <div class="text ">
-                <p>黑苹果,就是普通的电脑安装苹果系统, 当然这里我不讨论真机.<br>
-毕竟非常折腾的, 主要都是驱动问题.<br>
-... ...</p>
+                <p>时隔好几个月想起来我这个放在脑后的博客，突然觉得自己应该碎碎念一些经年流传的世事，于是，捡起来慢慢玩吧哈哈 😄😄</p>
 <!-- more -->
-<h1 id="虚拟机vmware安装mac-os-1014教程">虚拟机VMware安装Mac Os 10.14教程</h1>
-<h2 id="前言">前言</h2>
-<p>之前断断续续的对黑苹果的玩法感兴趣, 折腾了一段时间, 要么就是卡在虚拟机的安装进度条, 要么就是无限重启, 总的来说都快放弃了,以为是硬件不适配, 不过最近找到了一个懒人包的Mac Os 10.14, 所以就搞定了这次的安装. 闲言少叙, 开始吧!</p>
-<h2 id="安装工作">安装工作</h2>
-<h3 id="安装需要材料">安装需要材料</h3>
-<p>1.VMware Workstation Pro v15.0.0<br>
-2.解锁工具Unlocker v3.0.0<br>
-3.macOS Mojave 10.14懒人版</p>
-<h3 id="安装步骤">安装步骤</h3>
-<ol>
-<li>网上找个傻瓜包, VMware 15.0安装, 我是直接从官网下载的, 然后一路安装完,输入以下的激活密钥(任一)即可:</li>
-</ol>
-<pre><code>UY758-0RXEQ-M81WP-8ZM7Z-Y3HDA
-VF750-4MX5Q-488DQ-9WZE9-ZY2D6
-UU54R-FVD91-488PP-7NNGC-ZFAX6
-YC74H-FGF92-081VZ-R5QNG-P6RY4
-YC34H-6WWDK-085MQ-JYPNX-NZRA2
-</code></pre>
-<ol start="2">
-<li>这个时候的VMware还是不能直接安装苹果镜像的,需要打开系统的服务, 选择关闭以下五项(双击打开-停止服务):</li>
-</ol>
-<figure data-type="image" tabindex="1"><img src="https://leonkeen.github.io/post-images/image-20191217225225631.png" alt="image-20191217225225631" loading="lazy"></figure>
-<ol start="3">
-<li>
-<p>找到解锁工具，右键-以管理员身份运行win-install.cmd, 由于darwin的工具似乎最近有更新, 而服务器在海外下载速度缓慢, 大概是80M以内的文件, 所以我用全局代理IP更新好了这个工具. 下载更新完了脚本会自动关闭.</p>
-</li>
-<li>
-<p>打开VMware 创建虚拟机, 选择 &quot;典型&quot;, 安装程序光盘镜像选择 &quot; macOS Mojave 10.14 18A391 Lazy Installer.cdr &quot;,最后配置完,大概是下图的样子.<img src="https://leonkeen.github.io/post-images/image-20191217230144447.png" alt="image-20191217230144447" loading="lazy"></p>
-</li>
-<li>
-<p>安装系统的时候, 建议内存设置为4g左右, 我安装完了以后才调整到8g, 刚开始想着8g安装快些, 结果进度条卡住了,大概原因是读写问题.</p>
-</li>
-<li>
-<p>这个时候不能进入系统安装, 会报错, 需要再vmx的配置文件里边写入.vmx的配置文件( 虚拟机系统文件路径下的macOS 10.14.vmx ):</p>
-<pre><code>smc.version = &quot;0&quot;
-</code></pre>
-<p>如下图所示:</p>
-<figure data-type="image" tabindex="2"><img src="https://leonkeen.github.io/post-images/image-20191217230537134.png" alt="image-20191217230537134" loading="lazy"></figure>
-</li>
-</ol>
-<p>我安装的时候还出现了无限重启的问题, 在开机页面无限重启:</p>
-<figure data-type="image" tabindex="3"><img src="https://leonkeen.github.io/post-images/image-20191218221437157.png" alt="image-20191218221437157" loading="lazy"></figure>
-<p><strong>解决方法</strong> : 打开vmx文件  在最后添加</p>
-<p><code>cpuid.1.eax = &quot;00000000000000010000011010100101</code></p>
-<p>然后就进入虚拟机安装,等待进度条加载完毕.</p>
-<figure data-type="image" tabindex="4"><img src="https://leonkeen.github.io/post-images/image-20191218221449849.png" alt="image-20191218221449849" loading="lazy"></figure>
-<ol start="7">
-<li>和普通的安装系统类似, 安装windows系统的时候也是要建系统盘, 在左上方的位置, 找到实用工具里的磁盘工具, 找到上方的“编辑”-“抹掉”，名称就叫macOS 10.14吧.</li>
-<li>关闭磁盘工具后, 右侧会多出分出来的磁盘, 选择磁盘继续</li>
-</ol>
-<p>缓慢的等待,就是这个位置我不得不重来从8g的内存调到4g:</p>
-<figure data-type="image" tabindex="5"><img src="https://leonkeen.github.io/post-images/image-20191218223612327.png" alt="image-20191218223612327" loading="lazy"></figure>
-<p>这里很郁闷的一点是, 如果你直接关机再进来, 磁盘会显示读写了, 然而应该是写入不完整.</p>
-<p>为了防止出现各种奇怪的错误, 我不得不重新装.</p>
-<ol start="9">
-<li>安装完毕后, 常规的设置就和手机现在的设置差不多了, 账号密码, iCloud,键盘偏好等等.</li>
-<li>参照了网上的一些教程, 有些人在这里可以直接弹出安装的cdr光盘再挂载VMware tools 安装进去, 我这边报错, 大意就是目前不能弹出. 反正就是挂载了VMware 先前的那个Darwin的iso文件, 处于unlocker的位置的,挂载安装即可.</li>
-</ol>
-<figure data-type="image" tabindex="6"><img src="https://leonkeen.github.io/post-images/image-20191218225415740.png" alt="image-20191218225415740" loading="lazy"></figure>
-<ol start="11">
-<li>应该所有用虚拟机直接安装都会遇到登录不了iCloud的情况, 我刚开始还以为是网络原因, 特意去查看了一下桥接情况. 大概是这么报错的:</li>
-</ol>
-<figure data-type="image" tabindex="7"><img src="https://leonkeen.github.io/post-images/image-20191218225752471.png" alt="image-20191218225752471" loading="lazy"></figure>
-<p>也去网上查了一下原因, 实际上也是, 毕竟在vmx的文件里说了这是虚拟机, 所以需要伪造一个白苹果的id.</p>
-<p>这里需要用到变色龙的工具, 我找了网上的一些帖子里边工具链接都失效了, 所以谷歌大法好, 我已经在百度云盘里边分享了, 先解压出来cw.zip, 整个文件夹拉入苹果系统里.</p>
-<p>最后找到了, 打开变色龙工具,随机生成一个id, 类似如下:</p>
-<figure data-type="image" tabindex="8"><img src="https://leonkeen.github.io/post-images/image-20191218231254887.png" alt="image-20191218231254887" loading="lazy"></figure>
-<p>生成一个随机的白苹果的BIOS信息, 复制信息填写到vmx文件.</p>
-<p>搜索 &quot;board-id.reflectHost&quot; 把这一行删除, 因为默认都是True, 也就是告诉苹果是虚拟机安装的.</p>
-<p>然后填写以下信息:</p>
-<pre><code>board-id.reflectHost = &quot;FALSE&quot;
-board-id = &quot;***&quot;
-hw.model.reflectHost = &quot;FALSE&quot;
-hw.model = &quot;***&quot;
-serialNumber.reflectHost = &quot;FALSE&quot;
-serialNumber = &quot;***&quot;
-smbios.reflectHost = &quot;FALSE&quot;
-</code></pre>
-<p>其中&quot;***&quot;位置请按照你随机生成的BIOS信息填写. 保存重启即可.</p>
-<figure data-type="image" tabindex="9"><img src="https://leonkeen.github.io/post-images/image-20191218232600235.png" alt="image-20191218232600235" loading="lazy"></figure>
-<h3 id="工具包分享">工具包分享</h3>
-<p>我已经分享到百度云盘, 有需要可以自取, 还有不懂可以随时找我:</p>
-<p>链接: https://pan.baidu.com/s/1JO1VCYcqq9mapaIzxZfk7g 提取码: p959</p>
-<p>好好玩!</p>
-<h3 id="补充说明">补充说明</h3>
-<h4 id="1-unlocker版本">1. Unlocker版本</h4>
-<p>github (最新)：https://github.com/DrDonk/unlocker<br>
-最新版下载地址：https://github.com/DrDonk/unlocker/archive/master.zip</p>
-<blockquote>
-<p>2.08之后的unlocker里本身不包含了darwin.iso补丁，在进行打补丁的时候会自动从网络下载最新的darwin.iso并复制到vmware的安装目录，请在此步保持网络畅通。如果下载失败，也可以手动下载：</p>
-<p>darwin.iso：http://www.insanelymac.com/forum/files/file/31-vmware-tools-for-os-x-darwiniso/<br>
-如果以上地址打不开，可以到VMware官方地址下载，地址打开后找到最大的版本号,到packages里下载com.vmware.fusion.tools.darwin.zip.tar后解压即可：<br>
-http://softwareupdate.vmware.com/cds/vmw-desktop/fusion/</p>
-</blockquote>
-<h4 id="2-电脑本身是否支持黑苹果">2. 电脑本身是否支持黑苹果</h4>
-<p>首要看CPU是否支持VT技术(虚拟技术),也就是 Hardware Virtualization , 有些需要进入BIOS设置, 具体不作详细叙述, 可以自行百度. 可以用SecurAble这个软件检测.</p>
-<h4 id="3-安装beamoff">3. 安装Beamoff</h4>
-<p>beamoff APP 是针对VMware安装苹果系统优化的一款APP，安装后性能大幅度提升</p>
-<p>使用方法：</p>
-<ol>
-<li>
-<p>系统 『偏好设置』→ 『用户与群组』→ 『选中你自己的用户名』→  选择 『登录项 』 选项卡 - 点 + 号 找到你下载的 beamoff.app</p>
-</li>
-<li>
-<p>放到 dock 里，在右键，选项 → 登陆时打开。</p>
-</li>
-</ol>
+<h5 id="域名过期了回归默认url">域名过期了，回归默认url</h5>
+<p>因为域名过期了，又觉得自己长久以来也没去打理，所以有点听之任之的感觉，现在找回来，无非是因为之前的博客站好歹有点小小的备份，觉得主题有点丑，所以就改成Fog的主题，今晚测试了好久，主页虚化一直加载不出来，不知道是哪里出问题了，大概还是要看脸。emm……</p>
+<h5 id="安装评论api">安装评论api</h5>
+<p>换了主题以后就是想加入评论系统，虽然我觉得咱的站估计就几个人在看看，不过也许有点用呢？</p>
+<p>所以就注册了个leancloud，很神奇，居然一步到位的审核，果然现在支付宝是真舒服，直接人脸审核身份认证（类似国内的网站备案吧），按部就班的添加了appid就成了。</p>
+<h5 id="简化配件">简化配件</h5>
+<p>本来弄了看板娘和其它的有趣的挂件的，不过因为GitHub的服务器时不时的抽风，所以还是去掉吧，所以放只猫有助于互动？</p>
+<p>其它的是GitHub page上的一些token的问题，电脑里边都装好git，所以这些都蛮简单的，不过端口可能出了什么问题了，开了localhost4000居然是空白页，郁闷。</p>
+<h5 id="优化部分主图">优化部分主图</h5>
+<p>开了主页。</p>
+<p>好丑的配图，好简单的文字，大概就是审美突然有点进步，于是，嫌弃。</p>
+<p>换了unsplash的图，突然舒适多了，不过，图片太大了，大概率后面会拖慢网站的速度的，所以赶紧压缩了一下，可惜还是挺大的。</p>
+<h5 id="放弃外链图待解决">放弃外链图（待解决）</h5>
+<p>而且有个小问题，国内的图床有些加载不出来了，不知道是梯子的问题还是链接有套了什么？</p>
+<p>所以我果然对这些技术一脸黑，所以只能放弃很多外链了，怨念……</p>
+<p>博客就当碎碎的笔记来看吧，哈哈，也许是吐槽，也许是乱七八糟的记忆，不过还是蛮有趣的。</p>
+<p>无非折腾。</p>
 
             </div>
             <hr style="width: 80%;">
@@ -559,36 +464,24 @@ http://softwareupdate.vmware.com/cds/vmw-desktop/fusion/</p>
             <div class="postfooter">
                 <ul class="post-copyright">
                     <li><strong>文章作者：</strong></li>
-            <li><strong>原文链接：</strong>https://leonkeen.github.io/post/虚拟机VMware安装Mac Os 10.14教程</li>
+            <li><strong>原文链接：</strong>https://leonkeen.github.io/post/bo-ke-hui-gui-liao</li>
             <li><strong>版权声明：</strong>本博客所有文章除特别声明外，均采用<i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA
                 许可协议。转载请注明出处！</li>
             </ul>
         </div>
         <div id="otherpost">
             
-            <div class="prev-post-pc">
-                <div id="ppcontainer" onclick="window.location.href= 'https://leonkeen.github.io/post/段子一般的法律案例';return false">
-                    
-                    <img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1585243494509&amp;di=caafb4b52674f8cefe2acae3dcb4908f&amp;imgtype=0&amp;src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farchive%2F83852dbc403ec23bd293e8c75cf87d64ab5db2d4.jpg" style="width: 100%;" class="opimg">
-                    
-                    <h4 class="optitle">段子一般的法律案例</h4>
-                </div>
-            </div>
-            <div class="prev-post">
-                上一篇 <a href="https://leonkeen.github.io/post/段子一般的法律案例">段子一般的法律案例</a>
-            </div>
-            
             
             <div class="next-post-pc">
-                <div id="npcontainer" onclick="window.location.href= 'https://leonkeen.github.io/post/机场技术学习手记';return false">
+                <div id="npcontainer" onclick="window.location.href= 'https://leonkeen.github.io/post/typora-markdown-dao-yin-xiang-bi-ji-de-chang-shi';return false">
                     
-                    <img src="https://leonkeen.github.io/post-images/机场技术学习手记.jpg" style="width: 100%;" class="opimg">
+                    <img src="https://leonkeen.github.io/post-images/typora-markdown-dao-yin-xiang-bi-ji-de-chang-shi.jpg" style="width: 100%;" class="opimg">
                     
-                    <h4 class="optitle">机场技术学习手记</h4>
+                    <h4 class="optitle">Typora Markdown到印象笔记的尝试</h4>
                 </div>
             </div>
             <div class="next-post">
-                下一篇 <a href="https://leonkeen.github.io/post/机场技术学习手记">机场技术学习手记</a>
+                下一篇 <a href="https://leonkeen.github.io/post/typora-markdown-dao-yin-xiang-bi-ji-de-chang-shi">Typora Markdown到印象笔记的尝试</a>
             </div>
             
         </div>
@@ -734,19 +627,21 @@ http://softwareupdate.vmware.com/cds/vmw-desktop/fusion/</p>
         
         <div class="toc-container">
             <ul class="markdownIt-TOC">
-<li><a href="#%E8%99%9A%E6%8B%9F%E6%9C%BAvmware%E5%AE%89%E8%A3%85mac-os-1014%E6%95%99%E7%A8%8B">虚拟机VMware安装Mac Os 10.14教程</a>
+<li>
 <ul>
-<li><a href="#%E5%89%8D%E8%A8%80">前言</a></li>
-<li><a href="#%E5%AE%89%E8%A3%85%E5%B7%A5%E4%BD%9C">安装工作</a>
+<li>
 <ul>
-<li><a href="#%E5%AE%89%E8%A3%85%E9%9C%80%E8%A6%81%E6%9D%90%E6%96%99">安装需要材料</a></li>
-<li><a href="#%E5%AE%89%E8%A3%85%E6%AD%A5%E9%AA%A4">安装步骤</a></li>
-<li><a href="#%E5%B7%A5%E5%85%B7%E5%8C%85%E5%88%86%E4%BA%AB">工具包分享</a></li>
-<li><a href="#%E8%A1%A5%E5%85%85%E8%AF%B4%E6%98%8E">补充说明</a>
+<li>
 <ul>
-<li><a href="#1-unlocker%E7%89%88%E6%9C%AC">1. Unlocker版本</a></li>
-<li><a href="#2-%E7%94%B5%E8%84%91%E6%9C%AC%E8%BA%AB%E6%98%AF%E5%90%A6%E6%94%AF%E6%8C%81%E9%BB%91%E8%8B%B9%E6%9E%9C">2. 电脑本身是否支持黑苹果</a></li>
-<li><a href="#3-%E5%AE%89%E8%A3%85beamoff">3. 安装Beamoff</a></li>
+<li>
+<ul>
+<li><a href="#%E5%9F%9F%E5%90%8D%E8%BF%87%E6%9C%9F%E4%BA%86%E5%9B%9E%E5%BD%92%E9%BB%98%E8%AE%A4url">域名过期了，回归默认url</a></li>
+<li><a href="#%E5%AE%89%E8%A3%85%E8%AF%84%E8%AE%BAapi">安装评论api</a></li>
+<li><a href="#%E7%AE%80%E5%8C%96%E9%85%8D%E4%BB%B6">简化配件</a></li>
+<li><a href="#%E4%BC%98%E5%8C%96%E9%83%A8%E5%88%86%E4%B8%BB%E5%9B%BE">优化部分主图</a></li>
+<li><a href="#%E6%94%BE%E5%BC%83%E5%A4%96%E9%93%BE%E5%9B%BE%E5%BE%85%E8%A7%A3%E5%86%B3">放弃外链图（待解决）</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -982,7 +877,7 @@ http://softwareupdate.vmware.com/cds/vmw-desktop/fusion/</p>
                 var nc = new NewCounter();
                 nc.save({
                     time: 1,
-                    title: "虚拟机VMware安装Mac Os 10.14教程",
+                    title: "博客回归了",
                     url: pl,
                     xid: pl,
                 }).then(function (object) {

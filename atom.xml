@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://leonkeen.github.io</id>
     <title>天地入胸臆，文章生风雷。</title>
-    <updated>2020-09-15T13:24:20.241Z</updated>
+    <updated>2020-09-15T13:50:25.475Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://leonkeen.github.io"/>
     <link rel="self" href="https://leonkeen.github.io/atom.xml"/>
@@ -10,6 +10,35 @@
     <logo>https://leonkeen.github.io/images/avatar.png</logo>
     <icon>https://leonkeen.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 天地入胸臆，文章生风雷。</rights>
+    <entry>
+        <title type="html"><![CDATA[博客回归了]]></title>
+        <id>https://leonkeen.github.io/post/bo-ke-hui-gui-liao</id>
+        <link href="https://leonkeen.github.io/post/bo-ke-hui-gui-liao">
+        </link>
+        <updated>2020-09-15T13:47:54.000Z</updated>
+        <summary type="html"><![CDATA[<p>时隔好几个月想起来我这个放在脑后的博客，突然觉得自己应该碎碎念一些经年流传的世事，于是，捡起来慢慢玩吧哈哈 😄😄</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>时隔好几个月想起来我这个放在脑后的博客，突然觉得自己应该碎碎念一些经年流传的世事，于是，捡起来慢慢玩吧哈哈 😄😄</p>
+<!-- more -->
+<h5 id="域名过期了回归默认url">域名过期了，回归默认url</h5>
+<p>因为域名过期了，又觉得自己长久以来也没去打理，所以有点听之任之的感觉，现在找回来，无非是因为之前的博客站好歹有点小小的备份，觉得主题有点丑，所以就改成Fog的主题，今晚测试了好久，主页虚化一直加载不出来，不知道是哪里出问题了，大概还是要看脸。emm……</p>
+<h5 id="安装评论api">安装评论api</h5>
+<p>换了主题以后就是想加入评论系统，虽然我觉得咱的站估计就几个人在看看，不过也许有点用呢？</p>
+<p>所以就注册了个leancloud，很神奇，居然一步到位的审核，果然现在支付宝是真舒服，直接人脸审核身份认证（类似国内的网站备案吧），按部就班的添加了appid就成了。</p>
+<h5 id="简化配件">简化配件</h5>
+<p>本来弄了看板娘和其它的有趣的挂件的，不过因为GitHub的服务器时不时的抽风，所以还是去掉吧，所以放只猫有助于互动？</p>
+<p>其它的是GitHub page上的一些token的问题，电脑里边都装好git，所以这些都蛮简单的，不过端口可能出了什么问题了，开了localhost4000居然是空白页，郁闷。</p>
+<h5 id="优化部分主图">优化部分主图</h5>
+<p>开了主页。</p>
+<p>好丑的配图，好简单的文字，大概就是审美突然有点进步，于是，嫌弃。</p>
+<p>换了unsplash的图，突然舒适多了，不过，图片太大了，大概率后面会拖慢网站的速度的，所以赶紧压缩了一下，可惜还是挺大的。</p>
+<h5 id="放弃外链图待解决">放弃外链图（待解决）</h5>
+<p>而且有个小问题，国内的图床有些加载不出来了，不知道是梯子的问题还是链接有套了什么？</p>
+<p>所以我果然对这些技术一脸黑，所以只能放弃很多外链了，怨念……</p>
+<p>博客就当碎碎的笔记来看吧，哈哈，也许是吐槽，也许是乱七八糟的记忆，不过还是蛮有趣的。</p>
+<p>无非折腾。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Typora Markdown到印象笔记的尝试]]></title>
         <id>https://leonkeen.github.io/post/typora-markdown-dao-yin-xiang-bi-ji-de-chang-shi</id>
@@ -530,65 +559,6 @@ v2ray info 查看 V2Ray 配置信息</p>
 <p>[4] https://www.naguide.com/dicey-dungeons-inventor-guide/</p>
 <p>[5] https://www.naguide.com/dicey-dungeons-characters-spoilers-strategy/</p>
 <p>[6] https://www.gametruth.com/guides/dicey-dungeons-unlocks-tips-tricks-and-strategy-guide/</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[搭建SSR总结教程]]></title>
-        <id>https://leonkeen.github.io/post/2019-8-20-搭建SSR总结教程</id>
-        <link href="https://leonkeen.github.io/post/2019-8-20-搭建SSR总结教程">
-        </link>
-        <updated>2019-08-19T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>搭建SSR总结教程, 如果之前有过搭建的经验, 直接看这里就会非常简单清晰了... ...</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>搭建SSR总结教程, 如果之前有过搭建的经验, 直接看这里就会非常简单清晰了... ...</p>
-<!-- more -->
-<h1 id="搭建ssr总结教程">搭建SSR总结教程</h1>
-<h2 id="第一步-购买服务器">第一步 购买服务器</h2>
-<p>直接在vultr购买服务器. 注意要先充值和填写账单地址,当然随便填也没什么所谓.<br>
-另外我直接在谷歌搜来了一个拉新免费的credit $50,选择deploy服务器,并不能生效,所以还是需要先充值的,可以直接支付宝或者微信支付10刀即可.</p>
-<figure data-type="image" tabindex="1"><img src="https://i.loli.net/2019/08/25/NWMrBSDz7xV6tpi.png" alt="vultr-make-payment" loading="lazy"></figure>
-<p>选择$5的服务器 Cloud Compute<br>
-location选择美国任意位置<br>
-CentOs 选择centos 6 x64版本</p>
-<p>直接deploy</p>
-<h2 id="第二步-部署vps服务器">第二步 部署VPS服务器</h2>
-<h3 id="a-xshell直连主机">A. Xshell直连主机</h3>
-<p>安装Xshell<br>
-新建会话,直连到刚刚买的服务器IP</p>
-<blockquote>
-<p>如果xshell连不上服务器，没有弹出让你输入用户名和密码的输入框，表明你开到的ip是一个被封的ip，遇到这种情况，重新开新的服务器，直到能用xshell连上为止，耐心点哦！如果同一个地区开了多台服务器还是不行的话，可以换其它地区。</p>
-</blockquote>
-<p>由于第一次使用,还有遇到denied的情况,</p>
-<blockquote>
-<p>The remote SSH server rejected X11 forwarding request.<br>
-解决方法就是 点击”属性“中的”隧道“，然后将下面”转发x11到连接(x)“的选项去掉即可.</p>
-</blockquote>
-<h3 id="b-ssr脚本端口设置">B. SSR脚本端口设置</h3>
-<pre><code>yum -y install wget
-
-wget --no-check-certificate https://freed.ga/github/shadowsocksR.sh; bash shadowsocksR.sh
-
-</code></pre>
-<p>端口可以默认,也可以设置.</p>
-<blockquote>
-<p>关于端口的设置，总的网络总端口有6万多个，理论上可以任意设置。但是有的地区需要设置特殊的端口才有效，一些特殊的端口比如80、143、443、1433、3306、3389、8080。</p>
-</blockquote>
-<p>至于协议之类的,可以直接默认.</p>
-<p><strong>之后想修改账号信息，直接输入快捷管理命令：bash ssr.sh 进入管理界面，选择相应的数字来进行一键修改。</strong></p>
-<h3 id="c-一键加速服务器">C. 一键加速服务器</h3>
-<p>先更换内核脚本</p>
-<pre><code>wget -N --no-check-certificate https://freed.ga/kernel/ruisu.sh &amp;&amp; bash ruisu.sh
-
-</code></pre>
-<p>这个过程有点久.<br>
-锐速安装脚本</p>
-<pre><code>
-wget -N --no-check-certificate https://github.com/91yun/serverspeeder/raw/master/serverspeeder.sh &amp;&amp; bash serverspeeder.sh
-
-</code></pre>
-<h2 id="第三步-ssr连接上网">第三步 SSR连接上网</h2>
-<p>下载<a href="https://github.com/shadowsocks/shadowsocks-windows/releases">GitHub上的小飞机</a></p>
-<p>直接设置即可!</p>
 ]]></content>
     </entry>
 </feed>
