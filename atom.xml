@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://localhost:4000</id>
+    <id>https://leonkeen.github.io</id>
     <title>Gridea</title>
-    <updated>2020-09-15T12:13:56.940Z</updated>
+    <updated>2020-09-15T12:30:48.446Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="http://localhost:4000"/>
-    <link rel="self" href="http://localhost:4000/atom.xml"/>
+    <link rel="alternate" href="https://leonkeen.github.io"/>
+    <link rel="self" href="https://leonkeen.github.io/atom.xml"/>
     <subtitle>温故而知新</subtitle>
-    <logo>http://localhost:4000/images/avatar.png</logo>
-    <icon>http://localhost:4000/favicon.ico</icon>
+    <logo>https://leonkeen.github.io/images/avatar.png</logo>
+    <icon>https://leonkeen.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Gridea</rights>
     <entry>
         <title type="html"><![CDATA[奈何缘浅]]></title>
-        <id>http://localhost:4000/post/nai-he-yuan-qian</id>
-        <link href="http://localhost:4000/post/nai-he-yuan-qian">
+        <id>https://leonkeen.github.io/post/nai-he-yuan-qian</id>
+        <link href="https://leonkeen.github.io/post/nai-he-yuan-qian">
         </link>
         <updated>2020-05-29T15:57:54.000Z</updated>
         <summary type="html"><![CDATA[<p>昨晚看到一对小情侣，手牵手，笑的很明媚，小男生清秀，小女生清纯。</p>
@@ -35,8 +35,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[乌克兰悲剧科普]]></title>
-        <id>http://localhost:4000/post/wu-ke-lan-bei-ju-ke-pu</id>
-        <link href="http://localhost:4000/post/wu-ke-lan-bei-ju-ke-pu">
+        <id>https://leonkeen.github.io/post/wu-ke-lan-bei-ju-ke-pu</id>
+        <link href="https://leonkeen.github.io/post/wu-ke-lan-bei-ju-ke-pu">
         </link>
         <updated>2020-05-06T15:30:37.000Z</updated>
         <summary type="html"><![CDATA[<p>乌克兰作为国家出现的很晚，东西两部分历史上差距也很大。历史上乌克兰核心区域（第伯聂河？)主要是哥萨克居住，东部长期受东正教沙皇俄国影响，西部受天主教波兰立陶宛联邦统治。所有思维上会有差距。在一战期间沙俄倒台前后，乌克兰民族主义兴起，主要活动区域在当今乌克兰西部和波兰东南部，制造多起种族屠杀，视沙俄和波兰为主要压迫者，在二战期间多次与纳粹和苏联交战，并且直到1950年才被内务部门彻底剿灭。从此西乌克兰的民族主义活动转入地下，随着苏联解体，西乌克兰获得了足够的政治重量，开始重新活跃，打算清算一切跟苏联和俄罗斯相关的元素。而东部在苏联统治期间得到了长足的发展建设，历史上也有亲沙俄的传统。所以。</p>
@@ -53,8 +53,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[狸子说]]></title>
-        <id>http://localhost:4000/post/狸子说</id>
-        <link href="http://localhost:4000/post/狸子说">
+        <id>https://leonkeen.github.io/post/狸子说</id>
+        <link href="https://leonkeen.github.io/post/狸子说">
         </link>
         <updated>2020-03-25T15:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>大狸子是我群吉祥物,偶然妙语连珠,遂录之.<br>
@@ -81,8 +81,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[段子一般的法律案例]]></title>
-        <id>http://localhost:4000/post/段子一般的法律案例</id>
-        <link href="http://localhost:4000/post/段子一般的法律案例">
+        <id>https://leonkeen.github.io/post/段子一般的法律案例</id>
+        <link href="https://leonkeen.github.io/post/段子一般的法律案例">
         </link>
         <updated>2020-03-17T15:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>最近这段时间关注着罗老师说的,果然学法的就是相当理智的分析啊!<br>
@@ -106,8 +106,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[虚拟机VMware安装Mac Os 10.14教程]]></title>
-        <id>http://localhost:4000/post/虚拟机VMware安装Mac Os 10.14教程</id>
-        <link href="http://localhost:4000/post/虚拟机VMware安装Mac Os 10.14教程">
+        <id>https://leonkeen.github.io/post/虚拟机VMware安装Mac Os 10.14教程</id>
+        <link href="https://leonkeen.github.io/post/虚拟机VMware安装Mac Os 10.14教程">
         </link>
         <updated>2020-03-11T15:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>黑苹果,就是普通的电脑安装苹果系统, 当然这里我不讨论真机.<br>
@@ -139,13 +139,13 @@ YC34H-6WWDK-085MQ-JYPNX-NZRA2
 <ol start="2">
 <li>这个时候的VMware还是不能直接安装苹果镜像的,需要打开系统的服务, 选择关闭以下五项(双击打开-停止服务):</li>
 </ol>
-<figure data-type="image" tabindex="1"><img src="http://localhost:4000/post-images/image-20191217225225631.png" alt="image-20191217225225631" loading="lazy"></figure>
+<figure data-type="image" tabindex="1"><img src="https://leonkeen.github.io/post-images/image-20191217225225631.png" alt="image-20191217225225631" loading="lazy"></figure>
 <ol start="3">
 <li>
 <p>找到解锁工具，右键-以管理员身份运行win-install.cmd, 由于darwin的工具似乎最近有更新, 而服务器在海外下载速度缓慢, 大概是80M以内的文件, 所以我用全局代理IP更新好了这个工具. 下载更新完了脚本会自动关闭.</p>
 </li>
 <li>
-<p>打开VMware 创建虚拟机, 选择 &quot;典型&quot;, 安装程序光盘镜像选择 &quot; macOS Mojave 10.14 18A391 Lazy Installer.cdr &quot;,最后配置完,大概是下图的样子.<img src="http://localhost:4000/post-images/image-20191217230144447.png" alt="image-20191217230144447" loading="lazy"></p>
+<p>打开VMware 创建虚拟机, 选择 &quot;典型&quot;, 安装程序光盘镜像选择 &quot; macOS Mojave 10.14 18A391 Lazy Installer.cdr &quot;,最后配置完,大概是下图的样子.<img src="https://leonkeen.github.io/post-images/image-20191217230144447.png" alt="image-20191217230144447" loading="lazy"></p>
 </li>
 <li>
 <p>安装系统的时候, 建议内存设置为4g左右, 我安装完了以后才调整到8g, 刚开始想着8g安装快些, 结果进度条卡住了,大概原因是读写问题.</p>
@@ -155,36 +155,36 @@ YC34H-6WWDK-085MQ-JYPNX-NZRA2
 <pre><code>smc.version = &quot;0&quot;
 </code></pre>
 <p>如下图所示:</p>
-<figure data-type="image" tabindex="2"><img src="http://localhost:4000/post-images/image-20191217230537134.png" alt="image-20191217230537134" loading="lazy"></figure>
+<figure data-type="image" tabindex="2"><img src="https://leonkeen.github.io/post-images/image-20191217230537134.png" alt="image-20191217230537134" loading="lazy"></figure>
 </li>
 </ol>
 <p>我安装的时候还出现了无限重启的问题, 在开机页面无限重启:</p>
-<figure data-type="image" tabindex="3"><img src="http://localhost:4000/post-images/image-20191218221437157.png" alt="image-20191218221437157" loading="lazy"></figure>
+<figure data-type="image" tabindex="3"><img src="https://leonkeen.github.io/post-images/image-20191218221437157.png" alt="image-20191218221437157" loading="lazy"></figure>
 <p><strong>解决方法</strong> : 打开vmx文件  在最后添加</p>
 <p><code>cpuid.1.eax = &quot;00000000000000010000011010100101</code></p>
 <p>然后就进入虚拟机安装,等待进度条加载完毕.</p>
-<figure data-type="image" tabindex="4"><img src="http://localhost:4000/post-images/image-20191218221449849.png" alt="image-20191218221449849" loading="lazy"></figure>
+<figure data-type="image" tabindex="4"><img src="https://leonkeen.github.io/post-images/image-20191218221449849.png" alt="image-20191218221449849" loading="lazy"></figure>
 <ol start="7">
 <li>和普通的安装系统类似, 安装windows系统的时候也是要建系统盘, 在左上方的位置, 找到实用工具里的磁盘工具, 找到上方的“编辑”-“抹掉”，名称就叫macOS 10.14吧.</li>
 <li>关闭磁盘工具后, 右侧会多出分出来的磁盘, 选择磁盘继续</li>
 </ol>
 <p>缓慢的等待,就是这个位置我不得不重来从8g的内存调到4g:</p>
-<figure data-type="image" tabindex="5"><img src="http://localhost:4000/post-images/image-20191218223612327.png" alt="image-20191218223612327" loading="lazy"></figure>
+<figure data-type="image" tabindex="5"><img src="https://leonkeen.github.io/post-images/image-20191218223612327.png" alt="image-20191218223612327" loading="lazy"></figure>
 <p>这里很郁闷的一点是, 如果你直接关机再进来, 磁盘会显示读写了, 然而应该是写入不完整.</p>
 <p>为了防止出现各种奇怪的错误, 我不得不重新装.</p>
 <ol start="9">
 <li>安装完毕后, 常规的设置就和手机现在的设置差不多了, 账号密码, iCloud,键盘偏好等等.</li>
 <li>参照了网上的一些教程, 有些人在这里可以直接弹出安装的cdr光盘再挂载VMware tools 安装进去, 我这边报错, 大意就是目前不能弹出. 反正就是挂载了VMware 先前的那个Darwin的iso文件, 处于unlocker的位置的,挂载安装即可.</li>
 </ol>
-<figure data-type="image" tabindex="6"><img src="http://localhost:4000/post-images/image-20191218225415740.png" alt="image-20191218225415740" loading="lazy"></figure>
+<figure data-type="image" tabindex="6"><img src="https://leonkeen.github.io/post-images/image-20191218225415740.png" alt="image-20191218225415740" loading="lazy"></figure>
 <ol start="11">
 <li>应该所有用虚拟机直接安装都会遇到登录不了iCloud的情况, 我刚开始还以为是网络原因, 特意去查看了一下桥接情况. 大概是这么报错的:</li>
 </ol>
-<figure data-type="image" tabindex="7"><img src="http://localhost:4000/post-images/image-20191218225752471.png" alt="image-20191218225752471" loading="lazy"></figure>
+<figure data-type="image" tabindex="7"><img src="https://leonkeen.github.io/post-images/image-20191218225752471.png" alt="image-20191218225752471" loading="lazy"></figure>
 <p>也去网上查了一下原因, 实际上也是, 毕竟在vmx的文件里说了这是虚拟机, 所以需要伪造一个白苹果的id.</p>
 <p>这里需要用到变色龙的工具, 我找了网上的一些帖子里边工具链接都失效了, 所以谷歌大法好, 我已经在百度云盘里边分享了, 先解压出来cw.zip, 整个文件夹拉入苹果系统里.</p>
 <p>最后找到了, 打开变色龙工具,随机生成一个id, 类似如下:</p>
-<figure data-type="image" tabindex="8"><img src="http://localhost:4000/post-images/image-20191218231254887.png" alt="image-20191218231254887" loading="lazy"></figure>
+<figure data-type="image" tabindex="8"><img src="https://leonkeen.github.io/post-images/image-20191218231254887.png" alt="image-20191218231254887" loading="lazy"></figure>
 <p>生成一个随机的白苹果的BIOS信息, 复制信息填写到vmx文件.</p>
 <p>搜索 &quot;board-id.reflectHost&quot; 把这一行删除, 因为默认都是True, 也就是告诉苹果是虚拟机安装的.</p>
 <p>然后填写以下信息:</p>
@@ -197,7 +197,7 @@ serialNumber = &quot;***&quot;
 smbios.reflectHost = &quot;FALSE&quot;
 </code></pre>
 <p>其中&quot;***&quot;位置请按照你随机生成的BIOS信息填写. 保存重启即可.</p>
-<figure data-type="image" tabindex="9"><img src="http://localhost:4000/post-images/image-20191218232600235.png" alt="image-20191218232600235" loading="lazy"></figure>
+<figure data-type="image" tabindex="9"><img src="https://leonkeen.github.io/post-images/image-20191218232600235.png" alt="image-20191218232600235" loading="lazy"></figure>
 <h3 id="工具包分享">工具包分享</h3>
 <p>我已经分享到百度云盘, 有需要可以自取, 还有不懂可以随时找我:</p>
 <p>链接: https://pan.baidu.com/s/1JO1VCYcqq9mapaIzxZfk7g 提取码: p959</p>
@@ -229,8 +229,8 @@ http://softwareupdate.vmware.com/cds/vmw-desktop/fusion/</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[机场技术学习手记]]></title>
-        <id>http://localhost:4000/post/机场技术学习手记</id>
-        <link href="http://localhost:4000/post/机场技术学习手记">
+        <id>https://leonkeen.github.io/post/机场技术学习手记</id>
+        <link href="https://leonkeen.github.io/post/机场技术学习手记">
         </link>
         <updated>2020-03-10T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>最近安装酸酸乳各种失败真的是怀疑人生. 尝试了很多v2ray的机场技术, 还是不甚理想.<br>
@@ -246,7 +246,7 @@ http://softwareupdate.vmware.com/cds/vmw-desktop/fusion/</p>
 <h1 id="2020-3-10-机场技术学习手记">2020-3-10 机场技术学习手记</h1>
 <h4 id="前言">前言</h4>
 <p>最近安装酸酸乳各种失败真的是怀疑人生.</p>
-<figure data-type="image" tabindex="1"><img src="http://localhost:4000/post-images/1583941452619.png" alt="" loading="lazy"></figure>
+<figure data-type="image" tabindex="1"><img src="https://leonkeen.github.io/post-images/1583941452619.png" alt="" loading="lazy"></figure>
 <p>墙又高了吗?</p>
 <p>然后找了很多博客看, 也问了一些人, 大抵上就是现在还是v2ray的技术, 如果还是被封的ip, 那么还需要ws+tls.</p>
 <h4 id="前期工作">前期工作</h4>
@@ -320,8 +320,8 @@ v2ray info 查看 V2Ray 配置信息</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[免费的影视大全]]></title>
-        <id>http://localhost:4000/post/2019-12-25-免费的影视大全</id>
-        <link href="http://localhost:4000/post/2019-12-25-免费的影视大全">
+        <id>https://leonkeen.github.io/post/2019-12-25-免费的影视大全</id>
+        <link href="https://leonkeen.github.io/post/2019-12-25-免费的影视大全">
         </link>
         <updated>2019-12-24T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>收录的以下都是免费的在线影视站, 欢迎提意见. 网上收集的这些网站, 跟我一点关系都没..<br>
@@ -332,7 +332,7 @@ v2ray info 查看 V2Ray 配置信息</p>
 <!-- more -->
 <h1 id="免费的影视大全">免费的影视大全</h1>
 <p>因为最近看剧, 大家都在聊用的什么网站追的剧, 整理一下以下都是免费的在线影视站, <strong>仅用于测试用途</strong>。</p>
-<p>日常使用请支持正版, 以下排名不分先后, 可能有些是电信宽带快些, 有些则是移动联通,我也没做测试.</p>
+<p>日常使用请支持正版, 以下排名不分先后, 可能有些是电信宽带快些, 有些则是移动联通,我也没做测试. 有些可能已经失效了，大家捡着看就行了哈哈。有机会我搜全点。</p>
 <h2 id="在线的网页观看">在线的网页观看</h2>
 <p><a href="https://z1.m1907.cn/">简洁版在线看</a> (已验证, 页面简陋,但很多很看的)</p>
 <p><a href="http://www.feijisu7.com/">飞极速在线</a></p>
@@ -403,8 +403,8 @@ v2ray info 查看 V2Ray 配置信息</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[玩个骰子 - Rougelike 游戏《骰子地下城》小评]]></title>
-        <id>http://localhost:4000/post/2019-9-5-玩个骰子-Rougelike游戏《骰子地下城》小评</id>
-        <link href="http://localhost:4000/post/2019-9-5-玩个骰子-Rougelike游戏《骰子地下城》小评">
+        <id>https://leonkeen.github.io/post/2019-9-5-玩个骰子-Rougelike游戏《骰子地下城》小评</id>
+        <link href="https://leonkeen.github.io/post/2019-9-5-玩个骰子-Rougelike游戏《骰子地下城》小评">
         </link>
         <updated>2019-09-08T07:11:15.000Z</updated>
         <summary type="html"><![CDATA[<p>Dicey Dungeons 结合了 Roguelike 游戏的元素和手牌组合的玩法。回合制游戏, 蛮有趣的小游戏, 非常推荐... ...</p>
@@ -468,8 +468,8 @@ v2ray info 查看 V2Ray 配置信息</p>
     </entry>
     <entry>
         <title type="html"><![CDATA[搭建SSR总结教程]]></title>
-        <id>http://localhost:4000/post/2019-8-20-搭建SSR总结教程</id>
-        <link href="http://localhost:4000/post/2019-8-20-搭建SSR总结教程">
+        <id>https://leonkeen.github.io/post/2019-8-20-搭建SSR总结教程</id>
+        <link href="https://leonkeen.github.io/post/2019-8-20-搭建SSR总结教程">
         </link>
         <updated>2019-08-19T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>搭建SSR总结教程, 如果之前有过搭建的经验, 直接看这里就会非常简单清晰了... ...</p>
@@ -527,8 +527,8 @@ wget -N --no-check-certificate https://github.com/91yun/serverspeeder/raw/master
     </entry>
     <entry>
         <title type="html"><![CDATA[购机经验的小复盘]]></title>
-        <id>http://localhost:4000/post/2019-07-31-购机经验的小复盘</id>
-        <link href="http://localhost:4000/post/2019-07-31-购机经验的小复盘">
+        <id>https://leonkeen.github.io/post/2019-07-31-购机经验的小复盘</id>
+        <link href="https://leonkeen.github.io/post/2019-07-31-购机经验的小复盘">
         </link>
         <updated>2019-07-30T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>三千预算进卡吧,加钱加到九万八.八核 E5 装上去,四路Titan抱回家. 前前后后花了个把星期,真的是挺费时费力的,容易被坑,各种门道都是有水分的,然而我还是最后弄好机子了,简而言之就是,蛮有趣的. [手动滑稽.png]</p>
