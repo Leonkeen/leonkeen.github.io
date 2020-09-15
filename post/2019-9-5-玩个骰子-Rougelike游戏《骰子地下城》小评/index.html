@@ -120,11 +120,6 @@ Dicey Dungeon，中文名《骰子地下城》，汉化工作由热心网友谜�
           
           
           
-          <li><a href="https://leonkeen.github.io/talk">说说</a></li>
-          
-          
-          <li><a href="https://leonkeen.github.io/friends">友链</a></li>
-
           
         </ul>
       </div><!-- /.navbar-collapse -->
@@ -168,7 +163,7 @@ Dicey Dungeon，中文名《骰子地下城》，汉化工作由热心网友谜�
     
     <div id=side>
         <div class="avatar-border">
-            <img src="https://leonkeen.github.io/images/avatar.png?v=1600174423858" class="avatar">
+            <img src="https://leonkeen.github.io/images/avatar.png?v=1600175357665" class="avatar">
         </div>
         <div class="sitename">天地入胸臆，文章生风雷。</div>
         <span class="describtion" data-text='["夕夕碎碎念念"]'>&nbsp;</span>
@@ -186,6 +181,9 @@ Dicey Dungeon，中文名《骰子地下城》，汉化工作由热心网友谜�
         <a onclick="showqq()"><i style="font-size: 20px;"><img class="icon" src="https://leonkeen.github.io/media/images/QQ.png" alt=""></i></a>
         
         
+        
+        <a href="https://space.bilibili.com/3535158" target="_blank"><i style="font-size: 20px;"><img class="icon"
+                    src="https://leonkeen.github.io/media/images/bilibili.png" alt=""></i></a>
         
         
         
@@ -225,14 +223,6 @@ Dicey Dungeon，中文名《骰子地下城》，汉化工作由热心网友谜�
     
     
     
-    <div class="mchocie describtion">
-        <a href="https://leonkeen.github.io/talk" class="menubutton">说说</a>
-    </div>
-    
-    
-    <div class="mchocie describtion">
-        <a href="https://leonkeen.github.io/friends" class="menubutton">友人帐</a>
-    </div>
     
     <hr>
     <div id="footinfo">Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | Theme: <a
@@ -558,7 +548,57 @@ Dicey Dungeon，中文名《骰子地下城》，汉化工作由热心网友谜�
                 <div id="comment"  class="comment" style="background: white">
                     <div class="commentcontainer">
                         
-                        <p>请到客户端“主题--自定义配置--valine”中填入ID和KEY</p>
+                        <style>
+
+
+    @media screen and (min-width: 1300px) {
+        .veditor::placeholder {
+            color: #b3b3b3;
+            font-size: 18px;
+            text-align: center;
+            line-height: 3rem;
+            font-family: kaiti;
+        }
+    }
+</style>
+
+<body>
+    <div id="vcomments">
+    </div>
+    <script src="https://leonkeen.github.io/media/js/valine.min.js"></script>
+    <!-- <script src="https://unpkg.com/valine/dist/Valine.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+    <script>
+        new Valine({
+            el: '#vcomments',
+            appId: '5TNylCfW9M0QQAJuvW8zBIf4-gzGzoHsz',
+            appKey: 'bRgkS8Fn5U86lF5brg0i4Qy6',
+            notify: true,
+            verify: false,
+            avatar: 'retro',
+            pageSize: 10,
+            placeholder: '既然来了，何不畅所欲言呢？',
+            visitor: true, // 阅读量统计
+        });
+    </script>
+    <script type="text/javascript">
+        // jinrishici.load(function (result) {
+        //     var jrsc_plac = result.data.content + "\n「" + result.data.origin.title + "」" + result.data.origin
+        //         .dynasty + " · " + result.data.origin.author;
+        //     if (jrsc_plac != undefined)
+        //         document.getElementById("veditor").setAttribute("placeholder", jrsc_plac);
+        // 
+        var jrsc = '既然来了，何不畅所欲言呢？';
+        jinrishici.load(function (result) {
+                // 自己的处理逻辑
+                jrsc = result.data.content + "\n「" + result.data.origin.title + "」" + result.data.origin
+                 .dynasty + " · " + result.data.origin.author;
+            });
+    </script> 
+    
+</body>
+                        <div class="clear"></div>
                         
                     </div>
                 </div>
@@ -585,7 +625,7 @@ Dicey Dungeon，中文名《骰子地下城》，汉化工作由热心网友谜�
     var aplayerid = "325498243";
     var aplayerserver = "netease";
     var aplayerorder = "random";
-    var aplayerautoplay = "true";
+    var aplayerautoplay = "false";
     var aplayer = $("#myaplayer");
     aplayer.attr("server",aplayerserver);
     aplayer.attr("id",aplayerid);
@@ -858,8 +898,8 @@ Dicey Dungeon，中文名《骰子地下城》，汉化工作由热心网友谜�
         var rootaddr = $("#rootaddr").html();
         pl = pl.replace(rootaddr, "");
 
-        var appid = '';
-        var appkey = '';
+        var appid = '5TNylCfW9M0QQAJuvW8zBIf4-gzGzoHsz';
+        var appkey = 'bRgkS8Fn5U86lF5brg0i4Qy6';
         console.log(appid, appkey)
         if(AV==undefined)
             AV.init({
