@@ -1,13 +1,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
-    <meta name="description" content="搭建SSR总结教程, 如果之前有过搭建的经验, 直接看这里就会非常简单清晰了... ...
+    <meta name="description" content="因为最近听课都是用的Typora先本地做好笔记，继而直接复制粘贴到印象笔记里，这样子排版好看，同时条理比较清楚。
+不过有个小问题，每次Markdown里的图片没法直接导到印象笔记。
 
-搭建SSR总结教程
-第一步 购买服务器
-直接在vultr购买服务器. 注意要先充值和填写账单地址,当然随便填也没什么所谓.
-另外我直接在谷歌搜来了..." />
-    <meta name="keywords" content="SSR" />
+所以采取一个折中的方案：
+Hexo搭建本地博客，用印象剪..." />
+    <meta name="keywords" content="其他" />
     <link rel="stylesheet" href="https://leonkeen.github.io/media/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://leonkeen.github.io/styles/main.css">
     
@@ -401,15 +400,15 @@
         <div class="postshow" style="padding-bottom: 0;">
             
             <div class="postdetailimg" style="width:100%;overflow: hidden;">
-                <img src="https://leonkeen.github.io/post-images/2019-8-20-搭建SSR总结教程.png" class="postimage" style="cursor:auto">
+                <img src="https://leonkeen.github.io/post-images/typora-markdown-dao-yin-xiang-bi-ji-de-chang-shi.jpg" class="postimage" style="cursor:auto">
             </div>
             <div class="postinfo-detail">
-                <div class="postdate"><i class="fa fa-calendar"></i>2019-08-20</div>
-                <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 3 min read</div>
+                <div class="postdate"><i class="fa fa-calendar"></i>2020-09-15</div>
+                <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 2 min read</div>
                 <div class="posttag">
                     
-                    <a href="https://leonkeen.github.io/tag/-BSSbVeNt-" class="postlink">
-                        <i class="fa fa-tag"></i> SSR
+                    <a href="https://leonkeen.github.io/tag/Sc5O3SYJ7" class="postlink">
+                        <i class="fa fa-tag"></i> 其他
                     </a>
                     
                 </div>
@@ -417,9 +416,9 @@
             
         <div id="articlecontent">
             <div id="texttitle" style="text-align: center">
-                <h2>搭建SSR总结教程</h2>
+                <h2>Typora Markdown到印象笔记的尝试</h2>
                 <!-- id 将作为查询条件 -->
-                <div id="pl" style="display:none">https://leonkeen.github.io/post/2019-8-20-搭建SSR总结教程</div>
+                <div id="pl" style="display:none">https://leonkeen.github.io/post/typora-markdown-dao-yin-xiang-bi-ji-de-chang-shi</div>
                 <div id="rootaddr" style="display:none">https://leonkeen.github.io</div>
                 <span id="hotnum">
                     <h4><i class="fa fa-eye" aria-hidden="true" style="color: #FF8C00;"></i>&nbsp;&nbsp;热度</i>: <i
@@ -427,55 +426,61 @@
                 </span>
             </div>
             <div class="text ">
-                <p>搭建SSR总结教程, 如果之前有过搭建的经验, 直接看这里就会非常简单清晰了... ...</p>
+                <p>因为最近听课都是用的Typora先本地做好笔记，继而直接复制粘贴到印象笔记里，这样子排版好看，同时条理比较清楚。</p>
+<p>不过有个小问题，每次Markdown里的图片没法直接导到印象笔记。</p>
 <!-- more -->
-<h1 id="搭建ssr总结教程">搭建SSR总结教程</h1>
-<h2 id="第一步-购买服务器">第一步 购买服务器</h2>
-<p>直接在vultr购买服务器. 注意要先充值和填写账单地址,当然随便填也没什么所谓.<br>
-另外我直接在谷歌搜来了一个拉新免费的credit $50,选择deploy服务器,并不能生效,所以还是需要先充值的,可以直接支付宝或者微信支付10刀即可.</p>
-<figure data-type="image" tabindex="1"><img src="https://i.loli.net/2019/08/25/NWMrBSDz7xV6tpi.png" alt="vultr-make-payment" loading="lazy"></figure>
-<p>选择$5的服务器 Cloud Compute<br>
-location选择美国任意位置<br>
-CentOs 选择centos 6 x64版本</p>
-<p>直接deploy</p>
-<h2 id="第二步-部署vps服务器">第二步 部署VPS服务器</h2>
-<h3 id="a-xshell直连主机">A. Xshell直连主机</h3>
-<p>安装Xshell<br>
-新建会话,直连到刚刚买的服务器IP</p>
-<blockquote>
-<p>如果xshell连不上服务器，没有弹出让你输入用户名和密码的输入框，表明你开到的ip是一个被封的ip，遇到这种情况，重新开新的服务器，直到能用xshell连上为止，耐心点哦！如果同一个地区开了多台服务器还是不行的话，可以换其它地区。</p>
-</blockquote>
-<p>由于第一次使用,还有遇到denied的情况,</p>
-<blockquote>
-<p>The remote SSH server rejected X11 forwarding request.<br>
-解决方法就是 点击”属性“中的”隧道“，然后将下面”转发x11到连接(x)“的选项去掉即可.</p>
-</blockquote>
-<h3 id="b-ssr脚本端口设置">B. SSR脚本端口设置</h3>
-<pre><code>yum -y install wget
-
-wget --no-check-certificate https://freed.ga/github/shadowsocksR.sh; bash shadowsocksR.sh
-
-</code></pre>
-<p>端口可以默认,也可以设置.</p>
-<blockquote>
-<p>关于端口的设置，总的网络总端口有6万多个，理论上可以任意设置。但是有的地区需要设置特殊的端口才有效，一些特殊的端口比如80、143、443、1433、3306、3389、8080。</p>
-</blockquote>
-<p>至于协议之类的,可以直接默认.</p>
-<p><strong>之后想修改账号信息，直接输入快捷管理命令：bash ssr.sh 进入管理界面，选择相应的数字来进行一键修改。</strong></p>
-<h3 id="c-一键加速服务器">C. 一键加速服务器</h3>
-<p>先更换内核脚本</p>
-<pre><code>wget -N --no-check-certificate https://freed.ga/kernel/ruisu.sh &amp;&amp; bash ruisu.sh
-
-</code></pre>
-<p>这个过程有点久.<br>
-锐速安装脚本</p>
-<pre><code>
-wget -N --no-check-certificate https://github.com/91yun/serverspeeder/raw/master/serverspeeder.sh &amp;&amp; bash serverspeeder.sh
-
-</code></pre>
-<h2 id="第三步-ssr连接上网">第三步 SSR连接上网</h2>
-<p>下载<a href="https://github.com/shadowsocks/shadowsocks-windows/releases">GitHub上的小飞机</a></p>
-<p>直接设置即可!</p>
+<p>所以采取一个折中的方案：</p>
+<p><strong>Hexo搭建本地博客，用印象剪藏到印象笔记里。</strong></p>
+<h2 id="一-安装配套环境">一、安装配套环境</h2>
+<ol>
+<li>
+<p>下载nodejs环境 http://nodejs.cn/download/</p>
+</li>
+<li>
+<p>一路默认安装，同时记得需要进系统高级系统设置，打开弹出窗口的环境变量，找到path进行编辑（path添加nodejs的安装目录），另外需要重启一下电脑。</p>
+</li>
+<li>
+<p>用cmd命令输入一下node看安装完成否</p>
+</li>
+<li>
+<p>安装cnpm</p>
+<p><code>npm install -g cnpm --registry=https://registry.npm.taobao.org</code></p>
+</li>
+</ol>
+<h2 id="二-安装hexo">二、安装Hexo</h2>
+<ol>
+<li>
+<p>新建本地博客位置（自选，最好全英文目录），cd切到这个目录，输入指令</p>
+<p><code>npm install -g hexo-cli</code></p>
+</li>
+<li>
+<p>初始化hexo</p>
+<p><code>hexo init hexo</code></p>
+</li>
+<li>
+<p>安装依赖文件+编译资源，部署形成静态文件</p>
+<p><code>cd hexo</code></p>
+<p><code>cnpm install</code></p>
+<p><code>hexo generate</code></p>
+</li>
+</ol>
+<h2 id="三-本地测试">三、本地测试</h2>
+<p>开启本地博客的指令：</p>
+<p><code>hexo serve</code></p>
+<p>在浏览器输入：http://localhost:4000/ 即可访问到我们搭建好的hexo站点。</p>
+<p>如果端口被占用 可以使用如下命令启动：</p>
+<p><code>hexo s -p 5000</code></p>
+<h2 id="四-复制文章发布测试">四、复制文章发布测试</h2>
+<p>文章目录：hexo\source_posts</p>
+<p>另外，Markdown文件的表头需要写时间头</p>
+<hr>
+<p>title: post1<br>
+date: 2020-08-04 21:57:21<br>
+tags:</p>
+<hr>
+<p>文章插图目录：hexo\public\2020\08\04（时间戳可能一直在变化，可以多做测试）</p>
+<p>最后开起来，可以剪藏不过有闪退现象，印象笔记还是收到了剪藏的文章。</p>
+<p>还是比较适用于图片特别多的文章。</p>
 
             </div>
             <hr style="width: 80%;">
@@ -506,36 +511,24 @@ wget -N --no-check-certificate https://github.com/91yun/serverspeeder/raw/master
             <div class="postfooter">
                 <ul class="post-copyright">
                     <li><strong>文章作者：</strong></li>
-            <li><strong>原文链接：</strong>https://leonkeen.github.io/post/2019-8-20-搭建SSR总结教程</li>
+            <li><strong>原文链接：</strong>https://leonkeen.github.io/post/typora-markdown-dao-yin-xiang-bi-ji-de-chang-shi</li>
             <li><strong>版权声明：</strong>本博客所有文章除特别声明外，均采用<i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA
                 许可协议。转载请注明出处！</li>
             </ul>
         </div>
         <div id="otherpost">
             
-            <div class="prev-post-pc">
-                <div id="ppcontainer" onclick="window.location.href= 'https://leonkeen.github.io/post/2019-9-5-玩个骰子-Rougelike游戏《骰子地下城》小评';return false">
-                    
-                    <img src="https://leonkeen.github.io/post-images/2019-9-5-玩个骰子-Rougelike游戏《骰子地下城》小评.jpg" style="width: 100%;" class="opimg">
-                    
-                    <h4 class="optitle">玩个骰子 - Rougelike 游戏《骰子地下城》小评</h4>
-                </div>
-            </div>
-            <div class="prev-post">
-                上一篇 <a href="https://leonkeen.github.io/post/2019-9-5-玩个骰子-Rougelike游戏《骰子地下城》小评">玩个骰子 - Rougelike 游戏《骰子地下城》小评</a>
-            </div>
-            
             
             <div class="next-post-pc">
-                <div id="npcontainer" onclick="window.location.href= 'https://leonkeen.github.io/post/2019-07-31-购机经验的小复盘';return false">
+                <div id="npcontainer" onclick="window.location.href= 'https://leonkeen.github.io/post/nai-he-yuan-qian';return false">
                     
-                    <img src="https://leonkeen.github.io/post-images/2019-07-31-购机经验的小复盘.jpg" style="width: 100%;" class="opimg">
+                    <img src="https://leonkeen.github.io/post-images/nai-he-yuan-qian.jpeg" style="width: 100%;" class="opimg">
                     
-                    <h4 class="optitle">购机经验的小复盘</h4>
+                    <h4 class="optitle">奈何缘浅</h4>
                 </div>
             </div>
             <div class="next-post">
-                下一篇 <a href="https://leonkeen.github.io/post/2019-07-31-购机经验的小复盘">购机经验的小复盘</a>
+                下一篇 <a href="https://leonkeen.github.io/post/nai-he-yuan-qian">奈何缘浅</a>
             </div>
             
         </div>
@@ -631,17 +624,12 @@ wget -N --no-check-certificate https://github.com/91yun/serverspeeder/raw/master
         
         <div class="toc-container">
             <ul class="markdownIt-TOC">
-<li><a href="#%E6%90%AD%E5%BB%BAssr%E6%80%BB%E7%BB%93%E6%95%99%E7%A8%8B">搭建SSR总结教程</a>
+<li>
 <ul>
-<li><a href="#%E7%AC%AC%E4%B8%80%E6%AD%A5-%E8%B4%AD%E4%B9%B0%E6%9C%8D%E5%8A%A1%E5%99%A8">第一步 购买服务器</a></li>
-<li><a href="#%E7%AC%AC%E4%BA%8C%E6%AD%A5-%E9%83%A8%E7%BD%B2vps%E6%9C%8D%E5%8A%A1%E5%99%A8">第二步 部署VPS服务器</a>
-<ul>
-<li><a href="#a-xshell%E7%9B%B4%E8%BF%9E%E4%B8%BB%E6%9C%BA">A. Xshell直连主机</a></li>
-<li><a href="#b-ssr%E8%84%9A%E6%9C%AC%E7%AB%AF%E5%8F%A3%E8%AE%BE%E7%BD%AE">B. SSR脚本端口设置</a></li>
-<li><a href="#c-%E4%B8%80%E9%94%AE%E5%8A%A0%E9%80%9F%E6%9C%8D%E5%8A%A1%E5%99%A8">C. 一键加速服务器</a></li>
-</ul>
-</li>
-<li><a href="#%E7%AC%AC%E4%B8%89%E6%AD%A5-ssr%E8%BF%9E%E6%8E%A5%E4%B8%8A%E7%BD%91">第三步 SSR连接上网</a></li>
+<li><a href="#%E4%B8%80-%E5%AE%89%E8%A3%85%E9%85%8D%E5%A5%97%E7%8E%AF%E5%A2%83">一、安装配套环境</a></li>
+<li><a href="#%E4%BA%8C-%E5%AE%89%E8%A3%85hexo">二、安装Hexo</a></li>
+<li><a href="#%E4%B8%89-%E6%9C%AC%E5%9C%B0%E6%B5%8B%E8%AF%95">三、本地测试</a></li>
+<li><a href="#%E5%9B%9B-%E5%A4%8D%E5%88%B6%E6%96%87%E7%AB%A0%E5%8F%91%E5%B8%83%E6%B5%8B%E8%AF%95">四、复制文章发布测试</a></li>
 </ul>
 </li>
 </ul>
@@ -873,7 +861,7 @@ wget -N --no-check-certificate https://github.com/91yun/serverspeeder/raw/master
                 var nc = new NewCounter();
                 nc.save({
                     time: 1,
-                    title: "搭建SSR总结教程",
+                    title: "Typora Markdown到印象笔记的尝试",
                     url: pl,
                     xid: pl,
                 }).then(function (object) {
