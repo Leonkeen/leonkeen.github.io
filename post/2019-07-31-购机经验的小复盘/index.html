@@ -1,0 +1,835 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <meta name="description" content="三千预算进卡吧,加钱加到九万八.八核 E5 装上去,四路Titan抱回家. 前前后后花了个把星期,真的是挺费时费力的,容易被坑,各种门道都是有水分的,然而我还是最后弄好机子了,简而言之就是,蛮有趣的. [手动滑稽.png]
+
+购机经验的小复..." />
+    <meta name="keywords" content="硬件" />
+    <link rel="stylesheet" href="http://localhost:4000/media/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://localhost:4000/styles/main.css">
+    
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/dracula.min.css">
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/clipboard.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/css/live2d.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
+    <!-- 数学公式 -->
+    
+    <title>Gridea</title>
+    
+    <style>
+        .markdownIt-TOC {
+            padding-left: 2px;
+            width: 100%;
+        }
+
+        .markdownIt-TOC li {
+            padding-left: 2%;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div id="landlord">
+        <div class="message" style="opacity:0"></div>
+        <canvas id="live2d" width="240" height="250" class="live2d"></canvas>
+    </div>
+    <div id="codeCopyText" style="display: none"></div>
+    <div id="domainname" style="display:none">http://localhost:4000</div>
+    <!-- 响应式布局，针对PC端内容显示 -->
+    <div id="content">
+        <div>
+            <div id="bar">
+                <head>
+  <!-- 引入Bootstrap核心样式文件 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/css/bootstrap.min.css">
+</head>
+<style>
+  @media screen and (max-width:1200px) and (min-width: 768px) {
+    @media (min-width: 768px) {
+      .navbar-nav {
+        float: right;
+        margin: 0;
+      }
+    }
+  }
+  @media screen and (max-width:768px){
+    .mbapspan{
+      padding: 0;
+    }
+  }
+</style>
+
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barmenu"
+          aria-expanded="false" id="barbutton">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://localhost:4000">Gridea&nbsp;&nbsp;|</a>
+        <span class="navbar-brand mbapspan"><i id="mbaplayer" class="fa fa-play-circle-o" aria-hidden="true"
+            style="font-size: 28px;top: 12px;position: absolute;" onclick="aplayerPlay();"></i></span>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="barmenu">
+        <ul class="nav navbar-nav">
+          
+          
+          <li>
+            <a href="http://localhost:4000/">
+              首页
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="http://localhost:4000/archives">
+              归档
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="http://localhost:4000/tags">
+              标签
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="http://localhost:4000/post/about">
+              关于
+            </a>
+          </li>
+          
+          
+          
+          
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+
+  <!-- 引入jQuery核心js文件 -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+  <script>
+  var btstate = false;
+  var bt = $("#barbutton");
+  var bm = $("#barmenu");
+  bt.click(function(){
+    dropdown();
+  })
+  function dropdown(){
+    console.log(btstate);
+    //下拉
+    if(btstate==false){
+      bt.removeClass("collapsed");
+      bt.attr("aria-expanded","true");
+      bm.attr("aria-expanded","true")
+      bm.fadeIn(700);
+      btstate = true;
+    }
+    else{
+      bt.addClass("collapsed");
+      bt.attr("aria-expanded","false");
+      bm.removeClass("in");
+      bm.hide();
+      bm.attr("aria-expanded","false");
+      btstate = false;
+    }
+  }
+  </script> 
+</body>
+            </div>
+            <div class="row">
+                <div class="side"><body>
+    
+
+
+
+    
+</body>
+<script>
+    //-------------------------------------------------搜索
+    // 获取搜索框、搜索按钮、清空搜索、结果输出对应的元素
+    var searchInput = document.querySelector('.search-input');
+    var searchResults = document.querySelector('.search-results');
+
+    // 申明保存文章的标题、链接、内容的数组变量
+    var searchValue = '',
+        arrItems = [],
+        arrLinks = [],
+        arrTitles = [],
+        arrResults = [],
+        indexItem = [],
+        itemLength = 0;
+    var tmpDiv = document.createElement('div');
+    tmpDiv.className = 'result-item';
+
+    // ajax 的兼容写法
+    var xhr = new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTP');
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            xml = xhr.responseXML;
+            arrItems = xml.getElementsByTagName('entry');
+            itemLength = arrItems.length;
+            // 遍历并保存所有文章对应的标题、链接、内容到对应的数组中
+            // 同时过滤掉 HTML 标签
+            for (i = 0; i < itemLength; i++) {
+                var link = arrItems[i].getElementsByTagName('link')[0];
+                arrLinks[i] = link.getAttribute("href");
+                arrTitles[i] = arrItems[i].getElementsByTagName('title')[0].
+                childNodes[0].nodeValue.replace(/<.*?>/g, '');
+            }
+        }
+    }
+
+    // 开始获取根目录下 feed.xml 文件内的数据
+    xhr.open('get', '/atom.xml', true);
+    xhr.send();
+
+
+
+    // 输入框内容变化后就开始匹配，可以不用点按钮
+    // 经测试，onkeydown, onchange 等方法效果不太理想，
+    // 存在输入延迟等问题，最后发现触发 input 事件最理想，
+    // 并且可以处理中文输入法拼写的变化
+    searchInput.oninput = function () {
+        setTimeout(searchConfirm, 0);
+    }
+    searchInput.onfocus = function () {
+        searchResults.style.display = 'block';
+    }
+
+    function searchConfirm() {
+        if (searchInput.value == '') {
+            searchResults.style.display = 'none';
+        } else if (searchInput.value.search(/^\s+$/) >= 0) {
+            // 检测输入值全是空白的情况
+            searchInit();
+            var itemDiv = tmpDiv.cloneNode(true);
+            itemDiv.innerText = '请输入有效内容...';
+            searchResults.appendChild(itemDiv);
+        } else {
+            // 合法输入值的情况
+            searchInit();
+            searchValue = searchInput.value;
+            // 在标题、内容中查找
+            searchMatching(arrTitles, searchValue);
+        }
+    }
+
+    // 每次搜索完成后的初始化
+    function searchInit() {
+        arrResults = [];
+        indexItem = [];
+        searchResults.innerHTML = '';
+        searchResults.style.display = 'block';
+    }
+
+    function searchMatching(arr1, input) {
+        // 忽略输入大小写
+        input = new RegExp(input, 'i');
+        // 在所有文章标题、内容中匹配查询值
+        for (i = 0; i < itemLength; i++) {
+            if (arr1[i].search(input) !== -1) {
+                var arr = arr1;
+                indexItem.push(i); // 保存匹配值的索引
+                var indexContent = arr[i].search(input);
+                // 此时 input 为 RegExp 格式 /input/i，转换为原 input 字符串长度
+                var l = input.toString().length - 3;
+                var step = 10;
+
+                // 将匹配到内容的地方进行黄色标记，并包括周围一定数量的文本
+                arrResults.push(arr[i].slice(indexContent - step, indexContent));
+            }
+        }
+
+        // 输出总共匹配到的数目
+        var totalDiv = tmpDiv.cloneNode(true);
+        totalDiv.innerHTML = '<b>总匹配：' + indexItem.length + ' 项<hr></b>';
+        searchResults.appendChild(totalDiv);
+
+        // 未匹配到内容的情况
+        if (indexItem.length == 0) {
+            var itemDiv = tmpDiv.cloneNode(true);
+            itemDiv.innerText = '未匹配到内容...';
+            searchResults.appendChild(itemDiv);
+        }
+
+        // 将所有匹配内容进行组合
+        for (i = 0; i < arrResults.length; i++) {
+            var itemDiv = tmpDiv.cloneNode(true);
+            itemDiv.innerHTML = '<b>[' + arrTitles[indexItem[i]] +
+                ']</b><p>' + arrResults[i] + "</p><hr />";
+            itemDiv.setAttribute('onclick', 'changeHref(arrLinks[indexItem[' + i + ']])');
+            searchResults.appendChild(itemDiv);
+        }
+    }
+
+    function changeHref(href) {
+        location.href = href;
+    }
+
+    function showqq() {
+        var qq = document.getElementById("qq").innerHTML;
+        if (qq != '')
+            window.location.href = "tencent://message/?uin=" + qq + "&Site=&Menu=yes";
+        else
+            alert("博主暂未设置QQ联系方式");
+    }
+</script>
+</div>
+                
+            <div class="col-md-2 col-lg-3"></div>
+            <div id="postmain" class="col-xs-12 col-sm-12 col-md-8  col-lg-6 posttop" >
+                <link rel="stylesheet" href="http://localhost:4000/media/css/font-awesome.css">
+
+<body>
+    <div class="allcontent" id="postdetail">
+        <div class="postshow" style="padding-bottom: 0;">
+            
+            <div class="postdetailimg" style="width:100%;overflow: hidden;">
+                <img src="http://localhost:4000/post-images/2019-07-31-购机经验的小复盘.jpg" class="postimage" style="cursor:auto">
+            </div>
+            <div class="postinfo-detail">
+                <div class="postdate"><i class="fa fa-calendar"></i>2019-07-31</div>
+                <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 13 min read</div>
+                <div class="posttag">
+                    
+                    <a href="http://localhost:4000/tag/AuW5sp7jRh" class="postlink">
+                        <i class="fa fa-tag"></i> 硬件
+                    </a>
+                    
+                </div>
+            </div>
+            
+        <div id="articlecontent">
+            <div id="texttitle" style="text-align: center">
+                <h2>购机经验的小复盘</h2>
+                <!-- id 将作为查询条件 -->
+                <div id="pl" style="display:none">http://localhost:4000/post/2019-07-31-购机经验的小复盘</div>
+                <div id="rootaddr" style="display:none">http://localhost:4000</div>
+                <span id="hotnum">
+                    <h4><i class="fa fa-eye" aria-hidden="true" style="color: #FF8C00;"></i>&nbsp;&nbsp;热度</i>: <i
+                            class="hotnum">loading...</i></h4>
+                </span>
+            </div>
+            <div class="text ">
+                <p>三千预算进卡吧,加钱加到九万八.八核 E5 装上去,四路Titan抱回家. 前前后后花了个把星期,真的是挺费时费力的,容易被坑,各种门道都是有水分的,然而我还是最后弄好机子了,简而言之就是,蛮有趣的. [手动滑稽.png]</p>
+<!-- more -->
+<h1 id="购机经验的小复盘">购机经验的小复盘</h1>
+<h2 id="回顾1-购买的选择">回顾1 - 购买的选择</h2>
+<p>购买一台台式机子,很久之前就有这个需求了,一方面也是因为笔记本实在容易卡顿,另外一方面,想要高内存的运行一些东西,笔记本终究是捉襟见肘,所以我在今年的二月份也花了不少时间去琢磨买机子的事情.<br>
+说起来真的是挺费时费力的,容易被坑,各种门道都是有水分的,所以才明白为什么电脑城的人可以活的挺滋润的罢.<br>
+中间可能前前后后花了个把星期,主要是自己也是比较莽,没有做足准备.问了一些朋友,能入手的无非就是:</p>
+<ul>
+<li>电脑城或旗舰店选购</li>
+<li>网上直接购买整机</li>
+<li>网上购买散件</li>
+<li>直接买苹果电脑</li>
+</ul>
+<p>线下的购买自然是简单很多啦,省心,但是大概会被赚个500到上千吧,具体因机子因人而异.作为新手,去给电脑城的人练手还真的是有点身心不愉快,pass!<br>
+所以自己就想着网上购买的罢.<br>
+由于自己的预算相当有限,所以苹果电脑也是直接被我过滤掉了,虽然很长一段时间,我觉得苹果生态的软件和屏幕是真的很优秀:MacBook系列的笔记本,屏幕精致,触摸板很完美;iMac一体机直接省去了很多选购环节的选择困难症;,mac mini更是小巧别致,其实就是迷你主机...所有这些还是败在高昂的售价面前.</p>
+<p>工艺美的macbook</p>
+<figure data-type="image" tabindex="1"><img src="https://www.apple.com/v/mac/home/ah/images/overview/hero/macbook_air__csdfieli984m_large_2x.jpg" alt="macbook工艺美" loading="lazy"></figure>
+<p>另外不得不说,windows转ox的操作习惯等等,也是有些差距的,至少在国内习惯用的某些软件,ox上不一定有,办公套件也有兼容性的问题...<br>
+所以我就只有两个选择: <strong>买散件OR买整机.</strong><br>
+我想,很多人毕竟跟我一样,还是没有装机的经验的罢,所以看到这个情形,整机应该是个挺好的选择.再上淘宝看,发现散件的价格甚至高于整机的价格,也是挺无语的,实际上有二手散件有回收的,种种还是有不可控的因素,所以之前有人就劝我千万不要买整机,如果有朋友推荐买整机,啧啧,可以怼他收了多少好处费. 哈哈.<br>
+不过总的来说,如果只是简单的办公用,而且是相对急着用的,我还是挺推荐整机的,原因挺简单的,办公用,省心省时,而且有一些整机确实日常用个两三年还是没啥大问题的,可能会需要重装或者拔插内存条之类的小毛病,偶尔开不了机,但是调下BIOS还是可以的.<br>
+毕竟,好歹有个售后保证嘛.<br>
+散件则不然.<br>
+这里有个时间成本的问题,购买了散件,高高兴兴的装好机子,点不亮,瞬间气馁.一遍遍的反复排查是哪里出的问题,这里会让人很沮丧.庆幸的很,我当时购买了诸多散件,一次点亮,还好没有遇到反复排查的问题,不然我估计这会肯定只会推荐整机购买了.<br>
+其实下定决心购买散件前还是犹豫了好些天,因为我不会组装机子.另外,散件的参数也不清楚.<strong>诸事不备,事已先行,谓之莽.</strong></p>
+<h2 id="回顾2-价位与用途">回顾2 - 价位与用途</h2>
+<p>购买机子最主要的一点还是要确定价位预算,<s>以及以后升级配置的打算</s>.<br>
+朋友说,最好还是要直接在力所能及的范围内买贵一点的,他当时认为现在都9102年了,没个七八千买个电脑能用几年呢?<br>
+可惜我是两三个月后才听说到这个事的,不然也许我会改变我的购买配件的计划. 现在回想起来总是觉得当时买的处理器到底还是弱了很多.<br>
+回想起来,其实购买一台主机,最重要的一点在于用途,不同的用途以及预算,导致选择的可能性也不同,比如我今年购买的主机,大抵是不入流的,但是实际上我对于win7有种偏执的喜欢,故而在主板里边挑挑拣拣的,时下的电脑,win10真的是主流,我只不过是囿于我的操作习惯,不曾想,其实win10其实是可以调整的跟win7差不多的,虽然有个时间成本,但是现在的win10的一些机制还是很优秀的,<s>所以,我果然是老啦.</s></p>
+<figure data-type="image" tabindex="2"><img src="https://i.loli.net/2019/07/31/5d41b16128e7246338.png" alt="win7-old-memes" loading="lazy"></figure>
+<h3 id="选购主机用途">选购主机用途</h3>
+<blockquote>
+<p>朋友(开玩笑): 买个电脑当然是来摆设一下啦.<br>
+我: 请给我买几台来摆设摆设啊!</p>
+</blockquote>
+<p>我感觉随着时间的推移,大家购买主机已经不像以前一样只是奔着游戏去了,突然有点落寞. 现在的游戏画质越来越好,游戏性也是有目共睹,但是渐渐地大家都没什么时间在玩游戏了,偶尔在玩的,无非是地铁通勤手游的时光.大作不再昔日荣光. 电脑沦为电视机用.<br>
+不过说真的,偶尔来一把昆特牌也不能这么寒碜的摆个显示器,美其名曰,电脑买啦.<br>
+开个玩笑,常规的术语说的主机,其实是不包含显示器的,所以我们说购买电脑的预算,其实是不含显示器的.<br>
+选购主机的大家一般就几种情况:</p>
+<ul>
+<li>游戏用/ 设计渲染用</li>
+<li>家庭用/ 办公用</li>
+</ul>
+<p>前者基本是看显卡,看处理器,其他反而相对次要一些; 后者处理器内存优先,显卡不太重要(当然也看工种,但是这里说的是普通家用).<br>
+往细处讲,可能分类都有上十种.虽然都有高低预算之分,说实话,预算越高,越不容易被淘汰,但是保值程度不好说,更新换代太快了. 所以<strong>有需要就买,买了就不要想太多,价格终会波动的,买回来的就是时间.</strong></p>
+<h3 id="选购主机价位">选购主机价位</h3>
+<p>低端价位和高端价位能拉开差距的,大概就是显卡和主板处理器区域,至于硬盘内存条这种东西,实际上加多少完全取决于个人需求,低端显卡甚至不需要另外供电,高级点的显卡,供电和散热都是要面面俱到. 由于我买的是低价位的主机,高价位的性能高的机子,终究观望没有实际体验,难下定论.<br>
+日常普通办公差距不大,不过开3A大作,或渲染视频之类的,能感受到明显的区别.性价比终究因人而异.</p>
+<h2 id="回顾3-我选购的散件">回顾3 - 我选购的散件</h2>
+<p>献丑了,总共不足3k的预算,如下:</p>
+<table>
+<thead>
+<tr>
+<th>散件名称</th>
+<th>价格</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>昂达 H310C + G5400 CPU</td>
+<td>789</td>
+</tr>
+<tr>
+<td>昂达 8G内存条 * 2</td>
+<td>210</td>
+</tr>
+<tr>
+<td>昂达 GTX1050Ti</td>
+<td>857.4</td>
+</tr>
+<tr>
+<td>东芝 TR200 SSD套装含工具包</td>
+<td>259</td>
+</tr>
+<tr>
+<td>西数蓝盘 1T 机械硬盘</td>
+<td>289</td>
+</tr>
+<tr>
+<td>航嘉 暗影猎手3 机箱</td>
+<td>126</td>
+</tr>
+<tr>
+<td>台达 NX350 电源</td>
+<td>229</td>
+</tr>
+<tr>
+<td>杂牌键盘</td>
+<td>19.9</td>
+</tr>
+<tr>
+<td>杂牌鼠标</td>
+<td>9.9</td>
+</tr>
+<tr>
+<td><strong>合计</strong></td>
+<td><strong>2789.2</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="主板-cpu内存条">主板 CPU内存条</h3>
+<p>我全都购买了昂达这个牌子的,主要是因为昂达的H310C芯片组支持win7,但是需要搭配独立显卡使用.在没到手主板前我以为主板应该是相对大的主板,结果到手后傻眼了,这个主板那么小,怎么装进机箱插线...<br>
+但是跳脚的设定很有趣,可以直接win7和win10切换(其实是SATA协议和PCI-E协议的切换).<br>
+主板CPU和内存条共花了我千元,现在回顾起来:</p>
+<ul>
+<li>内存条有疑虑,是不是其他机子上表现还行,DDR3 1600,实际上其他牌子也可以的.有条件还是上2400吧.</li>
+<li>CPU到底是买差了, G5400只能说是入门款性质.现在大都i3起步.</li>
+<li>主板纠结于不要mv2,为了win7不出蓝屏BUG,所以也是费了不少心思.当然主板弱点在于不能很好的升级.各方面太过于紧凑,双内存通道而不是常见的4通道,然后我们可以安在一三或者二四.</li>
+</ul>
+<h3 id="关于硬盘">关于硬盘</h3>
+<p>时下都流行SSD了,我以为固态硬盘基本不会有很多的考究,然而实际上有协议这回事,也就是为什么我要装win7的话,需要相应的协议,我买的东芝是支持SATA的,至于品牌信仰,<em>当然是无脑上英特尔啦!</em><br>
+现在的SSD差不多就1块钱1g吧,所以买大点准没错.不过想要另外配备机械硬盘的,机械硬盘也就西数希捷东芝等,不需要很纠结,也不用纠结转速之类的事情.<br>
+当然经常做视频图片类工作,硬盘的需求还是比较大的.<br>
+另外,第一次装机的情况下,工具其实是不齐全的,所以我当时顺便买了工具包.事实证明,其实也就是为了那些螺丝比较好拧紧.</p>
+<h3 id="关于显卡">关于显卡</h3>
+<p>显卡这个东西实际上是因人而异的.现在入门的游戏卡基本都被拉到N卡的1050ti,大抵是因为吃鸡游戏火的原因.虽然我配置了1050ti更多的原因是因为要装win7必须要有独立显卡,另外实际上配合这个主板去装机,如果当时装1060那就很不一样了,因为1060开始需要独立供电,独立供电的显卡需要考虑怎么装好,如果是那么狭小的主板卡位,我觉得装机难度太大了.虽然很能理解现在的主板都是喜欢做的很小,而且机箱也有相对mini的,这是在牺牲散热的情况下做出的妥协.<br>
+具体显卡配置大抵上看显卡天梯图也能知道个大概了.不赘述.</p>
+<figure data-type="image" tabindex="3"><img src="http://www.upantool.com/uploads/allimg/190602/1_190602105140_1.jpg" alt="显卡天梯图" loading="lazy"></figure>
+<h3 id="电源及其他">电源及其他</h3>
+<p>关于电源,我也没仔细琢磨.当时问了一些人,航嘉的电源实际上有点小问题,有朋友说的,实际上用没多久就有异响,品控方面不大如意.</p>
+<blockquote>
+<p>航嘉一般只推荐出口型号如jumper500之类的,平价的一般台达、安钛克,好一点的上海韵</p>
+</blockquote>
+<p>实际上没什么品牌信仰,一般额定功率够用即可随意换.大功率的也相对好在可以升级.<br>
+机箱和键鼠,纯属个人喜欢了. 机箱可以DIY的东西很多,但也就是灯光酷炫之类.<br>
+键鼠的学问太深,有人喜欢机械键盘,有人喜欢电竞鼠标,难以一言以蔽之.</p>
+<h2 id="回顾4-装机的坑">回顾4 - 装机的坑</h2>
+<p>当时是周三左右购买的各种散件.结果到了周一才到了齐全,开始研究怎么装机.<br>
+刚开始会觉得是很新鲜的体验,毕竟这么多散件装到一个机箱里边,特别有成就感.可是我以前也没看过别人是怎么装机的,所以挺忐忑的.</p>
+<pre><code class="language-mermaid">graph TD
+
+A(CPU和散热器) --&gt;|安入 | E(主板)
+B(内存条) --&gt; |安入| E(主板)
+E --&gt; |安入| F(机箱)
+C(硬盘) --&gt; |连到|E
+G(显卡) --&gt; |安入|E
+D(电源) --&gt; |安入| F
+F --&gt; |连线| E
+D --&gt; |供电连线|A
+D --&gt; |供电连线|C
+D --&gt; |供电连线|E
+C --&gt; |安入|F
+
+</code></pre>
+<p>无论是安装CPU还是散热器,都是很忐忑的担心弄坏了主板,不曾想就是设计得这么紧凑的.安装散热器的时候还担心会不会把扣子弄断.更不用提主板的面板狭小,插线也怕弄断线.</p>
+<p>其实都是按部就班的,只不过走线很难看.再加上以前也没看别人装机,结果电源正放入,电源的风扇往上吹,顿时觉得很诧异,因为显卡的风扇也在那里.而且硬盘的线刚开始弄错位置,拔出来花了很久,浑身大汗,大抵是因为细密零件太多,生怕在机箱里头扯拉碰到别的.</p>
+<p>刚开始没什么信心,只是发现成功点亮后,毫无反应,就一个bios的界面.<br>
+而且线盘绕,机箱都合不上.非常沮丧.</p>
+<p>然后还出现个小插曲,因为点亮了,开机,本来就需要装系统,第一次不会弄,识别不到ssd,结果错误的以为机械盘是系统盘了,有点啼笑皆非.</p>
+<p>这里算是个小小的坑,新的SSD识别不了硬盘,原因是MBR需要先在 电脑-属性-管理- 设备管理硬盘 识别成功,然后建立新加卷,然后用BIOS引导以后才可以用该硬盘的系统！</p>
+<p>装完系统后,日常使用还是出现了不少问题.<br>
+比如无故关机开不了机子等等.其实主要原因,在于当时装机有一定的静电,后来也才知道了家里的静电是真的太大了.都被触电了好几回.</p>
+<p>然后后来才知道电源需要反过来装,第二个机械硬盘走背线也是要反过来装.<br>
+仔细想想其实步骤也不是太难,主要是太考验耐心了,容易出错,需要不停的查询是哪方面的原因,所以万一散件本身的问题也没法第一时间就判断出来,新手一次点亮只能说明运气好没买到次品,所以庆幸没翻车.</p>
+<p>不过好歹也是个有趣的经历.</p>
+<p>有位大佬说得好嘛: <strong>人生在于折腾!</strong></p>
+<blockquote>
+<p>三千预算进卡吧</p>
+<p>加钱加到九万八</p>
+<p>八核 E5 装上去</p>
+<p>四路Titan抱回家</p>
+<p>4K 屏幕组三屏</p>
+<p>万元水冷温度压</p>
+<p>固态硬盘装三块</p>
+<p>硬盘内存使劲加</p>
+<p>键鼠必花几千元</p>
+<p>耳机手柄三千八</p>
+<p>还有机箱六千元</p>
+<p>红星炸弹劈劈啪</p>
+<p>最后发现没啥用</p>
+<p>抱着神机刷贴吧</p>
+</blockquote>
+
+            </div>
+            <hr style="width: 80%;">
+            
+            
+            <div class="postfooter">
+                <ul class="post-copyright">
+                    <li><strong>文章作者：</strong></li>
+            <li><strong>原文链接：</strong>http://localhost:4000/post/2019-07-31-购机经验的小复盘</li>
+            <li><strong>版权声明：</strong>本博客所有文章除特别声明外，均采用<i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA
+                许可协议。转载请注明出处！</li>
+            </ul>
+        </div>
+        <div id="otherpost">
+            
+            <div class="prev-post-pc">
+                <div id="ppcontainer" onclick="window.location.href= 'http://localhost:4000/post/2019-8-20-搭建SSR总结教程';return false">
+                    
+                    <img src="http://localhost:4000/post-images/2019-8-20-搭建SSR总结教程.png" style="width: 100%;" class="opimg">
+                    
+                    <h4 class="optitle">搭建SSR总结教程</h4>
+                </div>
+            </div>
+            <div class="prev-post">
+                上一篇 <a href="http://localhost:4000/post/2019-8-20-搭建SSR总结教程">搭建SSR总结教程</a>
+            </div>
+            
+            
+        </div>
+    </div>
+    </div>
+    </div>
+
+</body>
+<script>
+    //文章阅读热度
+    var pl = $("#pl").html();
+    var rootaddr = $("#rootaddr").html();
+    pl = pl.replace(rootaddr, "");
+    $("#hotnum").attr('id', pl);
+</script>
+                <div id="comment" class="comment" style="background: white">
+                    <div class="commentcontainer">
+                        
+                        <p>请到客户端“主题--自定义配置--valine”中填入ID和KEY</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-lg-3">
+            </div>
+            <div id="bg">
+            </div>
+        </div>
+        
+        
+        <div class="toc-container">
+            <ul class="markdownIt-TOC">
+<li><a href="#%E8%B4%AD%E6%9C%BA%E7%BB%8F%E9%AA%8C%E7%9A%84%E5%B0%8F%E5%A4%8D%E7%9B%98">购机经验的小复盘</a>
+<ul>
+<li><a href="#%E5%9B%9E%E9%A1%BE1-%E8%B4%AD%E4%B9%B0%E7%9A%84%E9%80%89%E6%8B%A9">回顾1 - 购买的选择</a></li>
+<li><a href="#%E5%9B%9E%E9%A1%BE2-%E4%BB%B7%E4%BD%8D%E4%B8%8E%E7%94%A8%E9%80%94">回顾2 - 价位与用途</a>
+<ul>
+<li><a href="#%E9%80%89%E8%B4%AD%E4%B8%BB%E6%9C%BA%E7%94%A8%E9%80%94">选购主机用途</a></li>
+<li><a href="#%E9%80%89%E8%B4%AD%E4%B8%BB%E6%9C%BA%E4%BB%B7%E4%BD%8D">选购主机价位</a></li>
+</ul>
+</li>
+<li><a href="#%E5%9B%9E%E9%A1%BE3-%E6%88%91%E9%80%89%E8%B4%AD%E7%9A%84%E6%95%A3%E4%BB%B6">回顾3 - 我选购的散件</a>
+<ul>
+<li><a href="#%E4%B8%BB%E6%9D%BF-cpu%E5%86%85%E5%AD%98%E6%9D%A1">主板 CPU内存条</a></li>
+<li><a href="#%E5%85%B3%E4%BA%8E%E7%A1%AC%E7%9B%98">关于硬盘</a></li>
+<li><a href="#%E5%85%B3%E4%BA%8E%E6%98%BE%E5%8D%A1">关于显卡</a></li>
+<li><a href="#%E7%94%B5%E6%BA%90%E5%8F%8A%E5%85%B6%E4%BB%96">电源及其他</a></li>
+</ul>
+</li>
+<li><a href="#%E5%9B%9E%E9%A1%BE4-%E8%A3%85%E6%9C%BA%E7%9A%84%E5%9D%91">回顾4 - 装机的坑</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+    </div>
+    </div>
+    <div class="tog">
+        <div class="toggleContainer">
+            <div class="toggle">
+                <i class="fas fa-angle-double-up"></i>
+            </div>
+        </div>
+    </div>
+    <div id="bgchoice" style="display: none"></div>
+    
+    <div id="bgurl" style="display:none"></div>
+    
+    </div>
+</body>
+<script>
+    var img = $("img");
+    for (var i = 0; i < img.length; i++) {
+        if (img.eq(i).attr("class") == undefined) {
+            img.eq(i).attr("class", "lazyload");
+            var imgsrc = img.eq(i).attr("src");
+            img.eq(i).attr("data-original", imgsrc);
+            img.eq(i).attr("src", "");
+            img.eq(i).hide();
+        }
+    }
+</script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+<script>
+    //寻找所有code标签，加复制按钮鸭！(行内代码除外)
+    var codes = document.getElementsByTagName('code');
+    if (codes.length) {
+        for (var i = 0; i < codes.length; i++) {
+            //高度/行高=文本行数
+            // var rowNum=Math.round(codes[i].height()/parseFloat(codes[i].css('line-height')));
+            // console.log("当前有"+rowNum+"行");
+            var code_id = "code_id_" + i;
+            codes[i].setAttribute("id", code_id);
+            var ci = "#" + code_id;
+            var codedot = $(ci);
+            var rowNum = Math.round(codedot.height() / parseFloat(codedot.css('line-height')));
+            if (rowNum <= 1) continue;
+            var btn = document.createElement("button");
+            btn.setAttribute("class", "copybt");
+            btn.setAttribute("data-clipboard-target", "#" + code_id);
+            btn.innerHTML = '复制代码';
+            codes[i].parentNode.insertBefore(btn, codes[i]);
+        }
+    };
+    var cop = new ClipboardJS('.copybt');
+    var codeCopyText = $("#codeCopyText").html();
+    cop.on('success', function (e) {
+        alert(codeCopyText);
+        e.clearSelection();
+    });
+    cop.on('error', function (e) {
+        alert("矮油，复制失败了...手动复制吧勇士！");
+        e.clearSelection();
+    });
+</script>
+
+<script>
+    $(function () {
+        $('.toggleContainer').click(function () {
+            $('html,body').animate({
+                scrollTop: '0px'
+            }, 800);
+        });
+        $(window).scroll(function () {
+            var st = $(window).scrollTop();
+            if (st > 30) {
+                $(".toggleContainer").fadeIn(400);
+            } else {
+                $(".toggleContainer").fadeOut(100);
+            }
+        });
+    });
+</script>
+
+<script>
+    var bgchoice = $('#bgchoice').html();
+    var bg = $('#bg');
+    var bgurl = document.getElementById("bgurl").innerHTML;
+    if (bgchoice == 'default')
+        for (var i = 0; i < 3; i++)
+            bgurl = bgurl.replace("\\", "/");
+    bg.css("background", "url('" + bgurl + "')");
+</script>
+
+
+
+
+<!-- 动态更改上(下)一篇博客图片框长宽 -->
+<script>
+    npcontainer = document.querySelector('#npcontainer');
+    npstyle = window.getComputedStyle(npcontainer, null);
+    npwidth = npstyle.width;
+    npheight = 0.6 * Number(npwidth.replace("px", ""));
+    npheight = npheight.toString() + "px";
+    var op = $(".opimg");
+    op.css("height", npheight);
+</script>
+
+<script src="http://localhost:4000/media/share/dist/Share.js"></script>
+
+<script>
+    var avatarSrc = $(".avatar").attr("src");
+    var dp = document.getElementsByClassName("describtion")[0].innerHTML;
+</script>
+
+
+<script>
+    var title = document.getElementById("texttitle").getElementsByTagName("h2");
+    
+    var share = new Share('.share', {
+        title: title[0].innerHTML,
+        initialized: true,
+        //默认获取网站描述
+        description: dp,
+        //网站图片默认获取的是设置的用户头像
+        image: avatarSrc,
+        //激活的分享网站
+        sites: ["weibo", "qq", "wechat", "douban", "qzone", "facebook", "twitter", "google"],
+        //微信分享PC端会生成二维码分享,移动端如果可以唤起微信最好
+        wechatQrcodeTitle: "微信扫一扫：分享", // 微信二维码提示文字
+        wechatQrcodeHelper: '<p>微信里扫一下二维码</p><p>便可将本文分享至朋友圈。</p>',
+        //关闭的网站分享
+        disabled: ['google', 'linkedin'],
+        wechatQrcodePosition: 'bottom'
+    });
+
+    //点击分享按钮展现出分享icons
+    var sharebtnTag = false;
+    $(".sharebtn").click(function () {
+        if(!sharebtnTag)
+        {
+            $(".share").show();
+            sharebtnTag = true;
+        }
+        else
+        {
+            $(".share").hide();
+            sharebtnTag = false;
+        }
+    })
+
+    var donatebtnTag = false;
+    $(".donateImg").click(function () {
+        if(!donatebtnTag)
+        {
+            $(".donate").show();
+            donatebtnTag = true;
+        }
+        else{
+            $(".donate").hide();
+            donatebtnTag = false;
+        }
+    })
+
+    //加载后的事件同步（阅读量、移动端评论等
+    window.onload=function(){
+        getHotnum();
+        var sharepc = $(".share").eq(0).html();
+        $(".share").eq(1).html(sharepc);
+        document.getElementById("veditor").setAttribute("placeholder", jrsc);
+        aplayerbtnInit();
+    }
+</script>
+
+
+<script>
+    jQuery(document).ready(function ($) {
+        function lazyload() {
+            var oLazyload = $("img.lazyload"),
+                fLazyload = function (hLazyload) {
+                    var nLazyload = $(window).height() + $(document).scrollTop();
+                    oLazyload.each(function () {
+                        $(this).offset().top < nLazyload && ($(this).trigger("appear"), oLazyload =
+                            oLazyload.not(this));
+                    }), 0 == oLazyload.length && $(window).unbind("scroll", fLazyload);
+                };
+            oLazyload.each(function () {
+                $(this).one("appear", function () {
+                    $(this).attr("src", $(this).attr("data-original"));
+                    $(this).fadeIn(500);
+                });
+            }), $(window).bind("scroll", fLazyload), fLazyload();
+        }
+        lazyload();
+    });
+</script>
+
+<!-- <script src="http://localhost:4000/media/js/av-min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/leancloud-storage@3.13.0/dist/av-min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/leancloud-storage@4.6.1/dist/av-live-query-min.js"></script> -->
+
+<script>
+    function getHotnum() {
+        //文章阅读热度（重构，利用leancloud原生api）
+        var pl = $("#pl").html();
+        var rootaddr = $("#rootaddr").html();
+        pl = pl.replace(rootaddr, "");
+
+        var appid = '';
+        var appkey = '';
+        console.log(appid, appkey)
+        if(AV==undefined)
+            AV.init({
+                appId: appid,
+                appKey: appkey
+            });
+        const query = new AV.Query('Counter');
+        query.equalTo('url', pl);
+        var time = 'Loading...';
+        query.find().then(function (results) {
+            console.log(results)
+            if (results.length == 0) {
+                console.log("0")
+                var NewCounter = AV.Object.extend('Counter');
+                var nc = new NewCounter();
+                nc.save({
+                    time: 1,
+                    title: "购机经验的小复盘",
+                    url: pl,
+                    xid: pl,
+                }).then(function (object) {
+                    $(".hotnum").eq(0).html(1);
+                    $(".hotnum").eq(1).html(1);
+                });
+            } else {
+                id = results[0].id;
+                var todo = AV.Object.createWithoutData('Counter', id);
+                time = results[0].attributes.time + 1;
+                todo.set("time", time);
+                todo.save();
+                console.log(todo);
+                $(".hotnum").eq(0).html(time);
+                $(".hotnum").eq(1).html(time);
+            }
+
+        }, function (error) {
+            console.log(error)
+        });
+    }
+</script>
