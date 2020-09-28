@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://leonkeen.github.io</id>
     <title>天地入胸臆，文章生风雷。</title>
-    <updated>2020-09-15T13:57:53.897Z</updated>
+    <updated>2020-09-28T12:27:23.943Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://leonkeen.github.io"/>
     <link rel="self" href="https://leonkeen.github.io/atom.xml"/>
@@ -10,6 +10,30 @@
     <logo>https://leonkeen.github.io/images/avatar.png</logo>
     <icon>https://leonkeen.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 天地入胸臆，文章生风雷。</rights>
+    <entry>
+        <title type="html"><![CDATA[新瓶装旧酒——阿玛拉王国：惩罚 重置版]]></title>
+        <id>https://leonkeen.github.io/post/xin-ping-zhuang-jiu-jiu-a-ma-la-wang-guo-cheng-fa-chong-zhi-ban</id>
+        <link href="https://leonkeen.github.io/post/xin-ping-zhuang-jiu-jiu-a-ma-la-wang-guo-cheng-fa-chong-zhi-ban">
+        </link>
+        <updated>2020-09-28T12:25:40.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="小评">小评</h3>
+<p>因为之前对于阿玛拉王国这个IP念念不忘，其实内容谈不上多丰富，就是打击感十足，毕竟还想着做成网游而胎死腹中沦为单机。</p>
+<p>打击感依旧优秀，不过BUG据说比原版还多。作为ARPG，支线太多了，而且很多跑腿任务简直就是烦。</p>
+<h3 id="关于修改">关于修改</h3>
+<p>新版的存档修改器见这里：</p>
+<p>https://fearlessrevolution.com/viewtopic.php?f=23&amp;t=13713</p>
+<p>跟旧版几乎一致的注意事项，不能改身穿的装备。</p>
+<p>另外改存档只能从svd_fmt_5_X.sav 这个开始，前四个是特殊存档，改了会出现报废情况。</p>
+<p>下载地址也找到一个GitHub上的：</p>
+<p>https://github.com/mburbea/koar-item-editor</p>
+<p>存档这种东西，测试容易崩溃，大概改点背包就差不多了。</p>
+<p>另外贡献一个旧版代码，貌似全内网都没找到，外网也是找了一段时间测试出来成功的：</p>
+<p><code>&lt;attribute id=&quot;1D91C2&quot;&gt;+50% 角色所有动作速度&lt;/attribute&gt;</code></p>
+<p>效果是加成50%的角色速度（翻译成了“动画速度，新版还没测试是否这个代码。把这段添加进装备修改器里边就能直接添加了，实测50%已经很高了，加倍到100%或者150%则相当鬼畜，所有的重型武器已经变轻武器了。</p>
+<p>效果图：<br>
+<img src="https://leonkeen.github.io/post-images/1601296010389.png" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[博客回归了]]></title>
         <id>https://leonkeen.github.io/post/bo-ke-hui-gui-liao</id>
@@ -494,71 +518,6 @@ v2ray info 查看 V2Ray 配置信息</p>
 <h3 id="其他说明">其他说明</h3>
 <p>咱以前有收藏过类似的网站说明汇总:</p>
 <p><a href="https://hao.su/531/">免费的在线影视网站汇总</a></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[玩个骰子 - Rougelike 游戏《骰子地下城》小评]]></title>
-        <id>https://leonkeen.github.io/post/2019-9-5-玩个骰子-Rougelike游戏《骰子地下城》小评</id>
-        <link href="https://leonkeen.github.io/post/2019-9-5-玩个骰子-Rougelike游戏《骰子地下城》小评">
-        </link>
-        <updated>2019-09-08T07:11:15.000Z</updated>
-        <summary type="html"><![CDATA[<p>Dicey Dungeons 结合了 Roguelike 游戏的元素和手牌组合的玩法。回合制游戏, 蛮有趣的小游戏, 非常推荐... ...</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>Dicey Dungeons 结合了 Roguelike 游戏的元素和手牌组合的玩法。回合制游戏, 蛮有趣的小游戏, 非常推荐... ...</p>
-<!-- more -->
-<h2 id="游戏介绍">游戏介绍</h2>
-<p>Dicey Dungeon，中文名《骰子地下城》，汉化工作由热心网友谜之声~~（就是大家口中的谜叔啦！）~~ 牵头，本作的汉化质量挺不错的。</p>
-<p>Dicey Dungeons 结合了 Roguelike 游戏的元素和手牌组合的玩法。</p>
-<p>游戏的背景是做一个综艺节目，参赛的人都变成了骰子，不同的骰子角色有不同的初始装备。节目伊始，主持人就开始不停的碎碎念。几个懵懂的青年参加了这档节目，由此展开了游戏。</p>
-<figure data-type="image" tabindex="1"><img src="https://i.loli.net/2019/09/08/jWJLbC8KZflUctR.jpg" alt="" loading="lazy"></figure>
-<p>进入了游戏地牢，可以遇到各种各样的怪物、宝箱、血量、商店和铁砧，以及下一级的出口。</p>
-<p>总的地图层数是6层，打完 BOSS，可以解锁更多的 Bonus Round （奖励关卡）、其他角色或者是新 Episode （新剧集，引入特定规则），难度随之剧增。</p>
-<h2 id="游戏玩法">游戏玩法</h2>
-<p>本作的战斗玩法是回合制。</p>
-<p>回合制战斗的玩法历程久远，也常有人说，回合制游戏已死。不过本作还是让久违的回合制系统焕发出新的活力。</p>
-<p>角色可以自由选择自己要遭遇的怪，并且可以先行判断怪的下一步的技能，通过打怪升级，商店买装备，一步步的养成打 Boss 前最佳的状态。 以战士为例，战士拥有狂怒这个技能，可以打出两次同样装备的伤害。角色会根据玩家的闯关进度各个解锁，初始玩家只能使用难度最低的战士。游戏中还有许多小玩意儿，强化自己的装备，强化点有三种获取方式，地图随机刷取的强化点、升级选择性强化、商店购买强化，强化之后的装备可能会增加伤害，也可能会缩小携带容量等。</p>
-<p>每个角色都有相应的技能，比如发明家的技能——专注，可以把所有的骰子都变成六点。</p>
-<figure data-type="image" tabindex="2"><img src="https://i.loli.net/2019/09/08/tCAPxdK6RFQcrsb.png" alt="" loading="lazy"></figure>
-<p>游戏里的装备对于骰子的利用真的层出不穷，有的装备可以根据骰子的奇偶数使用BUFF或是造成伤害，有的还可以让骰子翻个变成另外一个数字等等。</p>
-<p>特殊的剧集关卡，就有各种各样的规则，比如怪物持有的装备都是强化过的，怪物血量加成，开局自带诅咒，玩家装备随机消失…… 这些特别的规则就使得玩法更加多样。</p>
-<p>隐藏角色小丑的拿法也很简单，小丑在 Boss 关的时候，在五到六轮内打死即可获得。</p>
-<p>至于其他的细节，这里就不再剧透了。</p>
-<h2 id="游戏拓展">游戏拓展</h2>
-<p>这个游戏自带作弊测试。</p>
-<p>开启方法也很简单： 在游戏根目录\data\text 文件夹，打开 modsettings.json 文件，可以修改初始的金钱、额外血量上限、一键胜利等等。一般用于测试网上下载下来的 Mod 测试的时候可以防止卡关等等。</p>
-<figure data-type="image" tabindex="3"><img src="https://i.loli.net/2019/09/08/9sdyzW38XeQhG1l.png" alt="" loading="lazy"></figure>
-<p>但是游玩的时候会提示作弊中。</p>
-<p>这个游戏对于 Mod 的包容度出奇的好。</p>
-<p>网上已经有很多拓展的内容，可以到这里找想玩的模组：</p>
-<p>https://itch.io/game-mods/tag-dicey-dungeons</p>
-<p>当然也可以自己动手做 Mod：</p>
-<p>找到 Text 文件夹下的文档，这个游戏调用到的装备、状态、角色、剧集关卡等等，都可以直接修改。</p>
-<p>比如我想修改发明家自带的锤子装备，背包栏占用 2 格的位置可以直接改为1格：</p>
-<figure data-type="image" tabindex="4"><img src="https://i.loli.net/2019/09/08/gJjkRG7T2yZDAYX.png" alt="" loading="lazy"></figure>
-<p>改完了保存，重启游戏即可。</p>
-<figure data-type="image" tabindex="5"><img src="https://i.loli.net/2019/09/08/OVj8EflzMP4CxqH.png" alt="" loading="lazy"></figure>
-<h2 id="游戏小评">游戏小评</h2>
-<h3 id="优点">优点</h3>
-<ul>
-<li>游戏内容丰富</li>
-<li>可拓展性强</li>
-<li>画风卡通</li>
-</ul>
-<h3 id="缺点">缺点</h3>
-<ul>
-<li>卡顿，偶有 BUG</li>
-<li>后期套路单一</li>
-<li>单独的流程短</li>
-<li>特殊事件太少</li>
-</ul>
-<p>总而言之，这款《骰子地下城》还是很优秀的策略小游戏。我认为还是挺适合玩玩，毕竟玩法也新颖，怪物技能也很有意思。玩多了可能会疲劳，所以我给他的定位也就是小游戏，值得一玩。</p>
-<p><strong>参考链接：</strong></p>
-<p>[1] https://en.wikipedia.org/wiki/Dicey_Dungeons</p>
-<p>[2] https://steamcn.com/t513351-1-1</p>
-<p>[3] http://baijiahao.baidu.com/s?id=1642469651560129464</p>
-<p>[4] https://www.naguide.com/dicey-dungeons-inventor-guide/</p>
-<p>[5] https://www.naguide.com/dicey-dungeons-characters-spoilers-strategy/</p>
-<p>[6] https://www.gametruth.com/guides/dicey-dungeons-unlocks-tips-tricks-and-strategy-guide/</p>
 ]]></content>
     </entry>
 </feed>

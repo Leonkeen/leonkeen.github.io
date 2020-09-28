@@ -1,13 +1,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
-    <meta name="description" content="最近安装酸酸乳各种失败真的是怀疑人生. 尝试了很多v2ray的机场技术, 还是不甚理想.
-真是无奈啊啊啊!
-至于ws tls 外加cdn的操作繁琐无比, 已经折腾好几天了,算了还是找找现成的梯子吧..
-... ...
-
-2020-3-10 ..." />
-    <meta name="keywords" content="SSR" />
+    <meta name="description" content="小评
+因为之前对于阿玛拉王国这个IP念念不忘，其实内容谈不上多丰富，就是打击感十足，毕竟还想着做成网游而胎死腹中沦为单机。
+打击感依旧优秀，不过BUG据说比原版还多。作为ARPG，支线太多了，而且很多跑腿任务简直就是烦。
+关于修改
+新版的存..." />
+    <meta name="keywords" content="其他" />
     <link rel="stylesheet" href="https://leonkeen.github.io/media/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://leonkeen.github.io/styles/main.css">
     
@@ -391,15 +390,15 @@
         <div class="postshow" style="padding-bottom: 0;">
             
             <div class="postdetailimg" style="width:100%;overflow: hidden;">
-                <img src="https://leonkeen.github.io/post-images/机场技术学习手记.jpg" class="postimage" style="cursor:auto">
+                <img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/7564110/aefd4138a9acec8aaceac7bbfa030111540b691b.jpg" class="postimage" style="cursor:auto">
             </div>
             <div class="postinfo-detail">
-                <div class="postdate"><i class="fa fa-calendar"></i>2020-03-11</div>
-                <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 3 min read</div>
+                <div class="postdate"><i class="fa fa-calendar"></i>2020-09-28</div>
+                <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 2 min read</div>
                 <div class="posttag">
                     
-                    <a href="https://leonkeen.github.io/tag/-BSSbVeNt-" class="postlink">
-                        <i class="fa fa-tag"></i> SSR
+                    <a href="https://leonkeen.github.io/tag/Sc5O3SYJ7" class="postlink">
+                        <i class="fa fa-tag"></i> 其他
                     </a>
                     
                 </div>
@@ -407,9 +406,9 @@
             
         <div id="articlecontent">
             <div id="texttitle" style="text-align: center">
-                <h2>机场技术学习手记</h2>
+                <h2>新瓶装旧酒——阿玛拉王国：惩罚 重置版</h2>
                 <!-- id 将作为查询条件 -->
-                <div id="pl" style="display:none">https://leonkeen.github.io/post/机场技术学习手记</div>
+                <div id="pl" style="display:none">https://leonkeen.github.io/post/xin-ping-zhuang-jiu-jiu-a-ma-la-wang-guo-cheng-fa-chong-zhi-ban</div>
                 <div id="rootaddr" style="display:none">https://leonkeen.github.io</div>
                 <span id="hotnum">
                     <h4><i class="fa fa-eye" aria-hidden="true" style="color: #FF8C00;"></i>&nbsp;&nbsp;热度</i>: <i
@@ -417,84 +416,22 @@
                 </span>
             </div>
             <div class="text ">
-                <p>最近安装酸酸乳各种失败真的是怀疑人生. 尝试了很多v2ray的机场技术, 还是不甚理想.<br>
-真是无奈啊啊啊!<br>
-至于ws tls 外加cdn的操作繁琐无比, 已经折腾好几天了,算了还是找找现成的梯子吧..<br>
-... ...</p>
-<!-- more -->
-<h1 id="2020-3-10-机场技术学习手记">2020-3-10 机场技术学习手记</h1>
-<h4 id="前言">前言</h4>
-<p>最近安装酸酸乳各种失败真的是怀疑人生.</p>
-<figure data-type="image" tabindex="1"><img src="https://leonkeen.github.io/post-images/1583941452619.png" alt="" loading="lazy"></figure>
-<p>墙又高了吗?</p>
-<p>然后找了很多博客看, 也问了一些人, 大抵上就是现在还是v2ray的技术, 如果还是被封的ip, 那么还需要ws+tls.</p>
-<h4 id="前期工作">前期工作</h4>
-<h5 id="1-检测vps是否被封">1. 检测VPS是否被封</h5>
-<p>方法1 : 打开cmd命令, 输入ping 加上开通的vps的ip</p>
-<p>方法2:  通过 http://ping.pe/ 检测IP是否被墙, 国外畅通, 国内的chart是红色就代表被封了.</p>
-<p>如果还想要这个ip的话, 可以<a href="https://www.shawnlin.cn/49b54080/#%E4%BF%AE%E6%94%B9DNS%E8%A7%A3%E6%9E%90%E6%9C%8D%E5%8A%A1%E5%99%A8">使用CloudFlare 套CDN.</a> 据说速度慢到怀疑人生...</p>
-<h5 id="2-vps的系统">2. vps的系统</h5>
-<p>搭v2ray可以是: Debian 9（推荐） Ubuntu 14 Ubuntu 16 CentOS 7</p>
-<p><strong>安装 Curl</strong><br>
-ubuntu/debian 系统安装 Curl 方法:</p>
-<p><code>apt-get update -y &amp;&amp; apt-get install curl -y</code><br>
-centos 系统安装 Curl 方法:</p>
-<p><code>yum update -y &amp;&amp; yum install curl -y</code></p>
-<h5 id="3-linux的简单命令">3. Linux的简单命令</h5>
-<p>VIM 快捷键使用：</p>
-<p><code>输入i 进入编辑模式</code></p>
-<p><code>Esc键退出编辑模式</code></p>
-<p><code>输入:w保存文件</code></p>
-<p><code>输入:q退出vim编辑</code></p>
-<h5 id="4-网上已有的一键搭建脚本">4. 网上已有的一键搭建脚本</h5>
-<ol>
-<li>下边是一键部署脚本:</li>
-</ol>
-<p><code>sudo -i bash &lt;(curl -s -L https://git.io/v2ray.sh)</code></p>
-<ol start="2">
-<li>
-<p>更新系统并安装常用软件<br>
-<code>yum update -y &amp;&amp; yum install wget curl unzip -y</code></p>
-<p>官方的安装脚本</p>
-<p><code>bash &lt;(curl -L -s https://install.direct/go.sh)</code></p>
-</li>
-<li>
-<p>在线部署教程(Vultr在线安装V2ray 无需xShell )</p>
-</li>
-</ol>
-<p>https://github.com/lbp0200/v2ray-vultr</p>
-<h4 id="使用">使用</h4>
-<h5 id="1-下载v2rayn">1. 下载v2rayN</h5>
-<p>下载链接： https://github.com/2dust/v2rayN/releases/latest</p>
-<p>然后选择 v2rayN-Core.zip 下载</p>
-<h5 id="2-在vps上输入-v2ray-url">2. 在VPS上输入 v2ray url</h5>
-<p>其他命令:</p>
-<p>快速管理命令：<br>
-v2ray info 查看 V2Ray 配置信息</p>
-<p>v2ray config 修改 V2Ray 配置</p>
-<p>v2ray link 生成 V2Ray 配置文件链接</p>
-<p>v2ray infolink 生成 V2Ray 配置信息链接</p>
-<p>v2ray qr 生成 V2Ray 配置二维码链接</p>
-<p>v2ray ss 修改 Shadowsocks 配置</p>
-<p>v2ray ssinfo 查看 Shadowsocks 配置信息</p>
-<p>v2ray ssqr 生成 Shadowsocks 配置二维码链接</p>
-<p>v2ray status 查看 V2Ray 运行状态</p>
-<p>v2ray start 启动 V2Ray</p>
-<p>v2ray stop 停止 V2Ray</p>
-<p>v2ray restart 重启 V2Ray</p>
-<p>v2ray log 查看 V2Ray 运行日志</p>
-<p>v2ray update 更新 V2Ray</p>
-<p>v2ray update.sh 更新 V2Ray 管理脚本</p>
-<p>v2ray uninstall 卸载 V2Ray</p>
-<h5 id="参考教程">参考教程</h5>
-<ol>
-<li>https://www.mianao.info/2018/04/23/%E8%BD%BB%E6%9D%BE%E6%90%AD%E5%BB%BA%E5%92%8C%E9%85%8D%E7%BD%AEv2ray</li>
-<li>http://bbs.itzmx.com/forum.php?mod=viewthread&amp;tid=87495</li>
-<li>https://www.01hai.com/note/av142444</li>
-<li>https://www.jianshu.com/p/95dee16c047e</li>
-<li>https://immm.in/archives/v2ray-install.html</li>
-<li>https://github.com/wulabing/V2Ray_ws-tls_bash_onekey</li>
-</ol>
+                <h3 id="小评">小评</h3>
+<p>因为之前对于阿玛拉王国这个IP念念不忘，其实内容谈不上多丰富，就是打击感十足，毕竟还想着做成网游而胎死腹中沦为单机。</p>
+<p>打击感依旧优秀，不过BUG据说比原版还多。作为ARPG，支线太多了，而且很多跑腿任务简直就是烦。</p>
+<h3 id="关于修改">关于修改</h3>
+<p>新版的存档修改器见这里：</p>
+<p>https://fearlessrevolution.com/viewtopic.php?f=23&amp;t=13713</p>
+<p>跟旧版几乎一致的注意事项，不能改身穿的装备。</p>
+<p>另外改存档只能从svd_fmt_5_X.sav 这个开始，前四个是特殊存档，改了会出现报废情况。</p>
+<p>下载地址也找到一个GitHub上的：</p>
+<p>https://github.com/mburbea/koar-item-editor</p>
+<p>存档这种东西，测试容易崩溃，大概改点背包就差不多了。</p>
+<p>另外贡献一个旧版代码，貌似全内网都没找到，外网也是找了一段时间测试出来成功的：</p>
+<p><code>&lt;attribute id=&quot;1D91C2&quot;&gt;+50% 角色所有动作速度&lt;/attribute&gt;</code></p>
+<p>效果是加成50%的角色速度（翻译成了“动画速度，新版还没测试是否这个代码。把这段添加进装备修改器里边就能直接添加了，实测50%已经很高了，加倍到100%或者150%则相当鬼畜，所有的重型武器已经变轻武器了。</p>
+<p>效果图：<br>
+<img src="https://leonkeen.github.io/post-images/1601296010389.png" alt="" loading="lazy"></p>
 
             </div>
             <hr style="width: 80%;">
@@ -525,36 +462,24 @@ v2ray info 查看 V2Ray 配置信息</p>
             <div class="postfooter">
                 <ul class="post-copyright">
                     <li><strong>文章作者：</strong></li>
-            <li><strong>原文链接：</strong>https://leonkeen.github.io/post/机场技术学习手记</li>
+            <li><strong>原文链接：</strong>https://leonkeen.github.io/post/xin-ping-zhuang-jiu-jiu-a-ma-la-wang-guo-cheng-fa-chong-zhi-ban</li>
             <li><strong>版权声明：</strong>本博客所有文章除特别声明外，均采用<i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA
                 许可协议。转载请注明出处！</li>
             </ul>
         </div>
         <div id="otherpost">
             
-            <div class="prev-post-pc">
-                <div id="ppcontainer" onclick="window.location.href= 'https://leonkeen.github.io/post/虚拟机VMware安装Mac Os 10.14教程';return false">
-                    
-                    <img src="https://leonkeen.github.io/post-images/虚拟机VMware安装Mac Os 10.14教程.jpg" style="width: 100%;" class="opimg">
-                    
-                    <h4 class="optitle">虚拟机VMware安装Mac Os 10.14教程</h4>
-                </div>
-            </div>
-            <div class="prev-post">
-                上一篇 <a href="https://leonkeen.github.io/post/虚拟机VMware安装Mac Os 10.14教程">虚拟机VMware安装Mac Os 10.14教程</a>
-            </div>
-            
             
             <div class="next-post-pc">
-                <div id="npcontainer" onclick="window.location.href= 'https://leonkeen.github.io/post/2019-12-25-免费的影视大全';return false">
+                <div id="npcontainer" onclick="window.location.href= 'https://leonkeen.github.io/post/bo-ke-hui-gui-liao';return false">
                     
-                    <img src="https://leonkeen.github.io/post-images/2019-12-25-免费的影视大全.png" style="width: 100%;" class="opimg">
+                    <img src="https://images.unsplash.com/photo-1586241223706-1fee38406c66?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1504&amp;q=80" style="width: 100%;" class="opimg">
                     
-                    <h4 class="optitle">免费的影视大全</h4>
+                    <h4 class="optitle">博客回归了</h4>
                 </div>
             </div>
             <div class="next-post">
-                下一篇 <a href="https://leonkeen.github.io/post/2019-12-25-免费的影视大全">免费的影视大全</a>
+                下一篇 <a href="https://leonkeen.github.io/post/bo-ke-hui-gui-liao">博客回归了</a>
             </div>
             
         </div>
@@ -700,19 +625,16 @@ v2ray info 查看 V2Ray 配置信息</p>
         
         <div class="toc-container">
             <ul class="markdownIt-TOC">
-<li><a href="#2020-3-10-%E6%9C%BA%E5%9C%BA%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0%E6%89%8B%E8%AE%B0">2020-3-10 机场技术学习手记</a><br>
-*<br>
-*<br>
-* <a href="#%E5%89%8D%E8%A8%80">前言</a><br>
-* <a href="#%E5%89%8D%E6%9C%9F%E5%B7%A5%E4%BD%9C">前期工作</a><br>
-* <a href="#1-%E6%A3%80%E6%B5%8Bvps%E6%98%AF%E5%90%A6%E8%A2%AB%E5%B0%81">1. 检测VPS是否被封</a><br>
-* <a href="#2-vps%E7%9A%84%E7%B3%BB%E7%BB%9F">2. vps的系统</a><br>
-* <a href="#3-linux%E7%9A%84%E7%AE%80%E5%8D%95%E5%91%BD%E4%BB%A4">3. Linux的简单命令</a><br>
-* <a href="#4-%E7%BD%91%E4%B8%8A%E5%B7%B2%E6%9C%89%E7%9A%84%E4%B8%80%E9%94%AE%E6%90%AD%E5%BB%BA%E8%84%9A%E6%9C%AC">4. 网上已有的一键搭建脚本</a><br>
-* <a href="#%E4%BD%BF%E7%94%A8">使用</a><br>
-* <a href="#1-%E4%B8%8B%E8%BD%BDv2rayn">1. 下载v2rayN</a><br>
-* <a href="#2-%E5%9C%A8vps%E4%B8%8A%E8%BE%93%E5%85%A5-v2ray-url">2. 在VPS上输入 v2ray url</a><br>
-* <a href="#%E5%8F%82%E8%80%83%E6%95%99%E7%A8%8B">参考教程</a></li>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#%E5%B0%8F%E8%AF%84">小评</a></li>
+<li><a href="#%E5%85%B3%E4%BA%8E%E4%BF%AE%E6%94%B9">关于修改</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
     </div>
@@ -942,7 +864,7 @@ v2ray info 查看 V2Ray 配置信息</p>
                 var nc = new NewCounter();
                 nc.save({
                     time: 1,
-                    title: "机场技术学习手记",
+                    title: "新瓶装旧酒——阿玛拉王国：惩罚 重置版",
                     url: pl,
                     xid: pl,
                 }).then(function (object) {
